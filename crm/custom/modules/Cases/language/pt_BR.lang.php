@@ -1,0 +1,31 @@
+<?php
+// created: 2012-04-03 09:19:16
+$mod_strings = array (
+  'LBL_RESPONSAVEL_UNIDADE' => 'Responsável unidade',
+  'LBL_RESPONSAVEL_ATUAL' => 'Responsável atual',
+  'LBL_DATA_FINALIZACAO' => 'Data finalizaçao',
+  'LBL_DATA_AVALIACAO' => 'Data avaliação',
+  'LBL_RESPONSAVEL_AVALIACAO' => 'Responsável avaliação',
+  'LBL_OUTROS' => 'Outros',
+  'LBL_EDITVIEW_PANEL1' => 'Avaliação',
+  'LBL_CONTATO' => 'Contato',
+  'LBL_STATUS_OC' => 'Status ',
+  'LBL_UNIDADE' => 'Unidade',
+  'LBL_DATA_REGISTRO' => 'Data registro',
+  'LBL_ACOES' => 'Ações',
+  'LBL_NUMBER' => 'Número:',
+  'LBL_TELEFONE' => 'Telefone',
+  'LBL_EMAIL' => 'Email',
+  'LBL_SAC' => 'SAC',
+  'LBL_QG_ACAO' => 'Ação',
+  'LBL_CAIXA' => 'Caixa',
+  'LBL_RECLAMACAO' => 'Reclamação',
+  'LBL_INFORMACAO' => 'Informacao',
+  'LBL_RECLAMACAORAFAELA' => 'reclamacaoRafaela',
+  'LBL_RECLAMACAOADEMAR' => 'reclamacaoademar',
+  'LBL_EDITVIEW_PANEL2' => 'Novo Painel 2',
+  'LBL_EDITVIEW_PANEL4' => 'Nacamura\'s Ocorrencias',
+  'LBL_DETAILVIEW_PANEL1' => 'Novo Painel 1',
+  'LBL_SISTEMA' => 'Sistema',
+);
+?>

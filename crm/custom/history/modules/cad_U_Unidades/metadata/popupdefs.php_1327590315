@@ -1,0 +1,28 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'cad_U_Unidades',
+    'varName' => 'cad_U_Unidades',
+    'orderBy' => 'cad_u_unidades.name',
+    'whereClauses' => array (
+  'name' => 'cad_u_unidades.name',
+  'codigo_c' => 'cad_u_unidades_cstm.codigo_c',
+),
+    'searchInputs' => array (
+  1 => 'name',
+  4 => 'codigo_c',
+),
+    'searchdefs' => array (
+  'codigo_c' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CODIGO',
+    'width' => '10%',
+    'name' => 'codigo_c',
+  ),
+  'name' => 
+  array (
+    'name' => 'name',
+    'width' => '10%',
+  ),
+),
+);

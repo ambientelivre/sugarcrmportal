@@ -1,0 +1,22 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Name=Firefox Web Browser
+Name[pt]=Firefox Navegador Web
+Name[pt_BR]=CRM TECPAR
+Comment=Browse the World Wide Web
+Comment[pt]=Navegue na Internet
+Comment[pt_BR]=Navegue na Internet
+GenericName=Web Browser
+GenericName[pt]=Navegador Web
+GenericName[pt_BR]=Navegador Web
+Exec=firefox %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=firefox
+Categories=Application;Internet;Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;
+StartupWMClass=Firefox
+StartupNotify=true

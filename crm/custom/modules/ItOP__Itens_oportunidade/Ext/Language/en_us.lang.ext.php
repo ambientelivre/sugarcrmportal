@@ -1,0 +1,9 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_ITOP__ITENS_OPORTUNIDADE_OPPORTUNITIES_FROM_OPPORTUNITIES_TITLE'] = 'Oportunidades';
+$mod_strings['LBL_ITOP__ITENS_OPORTUNIDADE_CAD_S_SOLUCOES_FROM_CAD_S_SOLUCOES_TITLE'] = 'Soluções';
+
+?>

@@ -1,0 +1,51 @@
+X-ASG-Debug-ID: 1332179570-0085ca0809408a50001-TjQXJT
+Received: from sugar (sugar.tecpar.br [172.16.128.21]) by smtp.tecpar.br with ESMTP id InmG5lAxeBm24XyU for <elis.e@yahoo.com>; Mon, 19 Mar 2012 14:52:50 -0300 (BRT)
+X-Barracuda-Envelope-From: crm@tecpar.br
+Date: Mon, 19 Mar 2012 14:52:15 -0300
+To: "Sr. =?UTF-8?Q?Rog=C3=A9rio=20Moreira=20de=20Oliveira?=" <elis.e@yahoo.com>
+From: CRM Tecpar <crm@tecpar.br>
+Reply-To: Admin Administrator <crm@tecpar.br>
+Subject: teste
+Message-ID: <94286051aef7fa4911ff204c32d36190@sugar>
+X-ASG-Orig-Subj: teste
+X-Priority: 3
+X-Mailer: PHPMailer (phpmailer.codeworxtech.com) [version 2.3]
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_94286051aef7fa4911ff204c32d36190"
+X-Barracuda-Connect: sugar.tecpar.br[172.16.128.21]
+X-Barracuda-Start-Time: 1332179570
+X-Barracuda-URL: http://192.168.99.7:8000/cgi-mod/mark.cgi
+X-Barracuda-Spam-Score: 0.00
+X-Barracuda-Spam-Status: No, SCORE=0.00 using per-user scores of TAG_LEVEL=1000.0 QUARANTINE_LEVEL=1000.0 KILL_LEVEL=9.0 tests=HTML_MESSAGE, MIME_BASE64_BLANKS
+X-Barracuda-Spam-Report: Code version 3.2, rules version 3.2.2.91682
+	Rule breakdown below
+	 pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	0.00 HTML_MESSAGE           BODY: HTML included in message
+	0.00 MIME_BASE64_BLANKS     RAW: Extra blank lines in base64 encoding
+
+
+--b1_94286051aef7fa4911ff204c32d36190
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: base64
+
+YXNzb2NpYSBvIGVtYWkmY2NlZGlsO2wgJmFncmF2ZTsgY29udGE/DQo=
+
+
+--b1_94286051aef7fa4911ff204c32d36190
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBYSFRNTCAxLjAgVHJhbnNpdGlvbmFs
+Ly9FTiIgImh0dHA6Ly93d3cudzMub3JnL1RSL3hodG1sMS9EVEQveGh0bWwxLXRyYW5zaXRpb25h
+bC5kdGQiPgo8aHRtbCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+CjxoZWFk
+PgoJPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNo
+YXJzZXQ9VVRGLTgiIC8+Cjx0aXRsZT50ZXN0ZTwvdGl0bGU+CjwvaGVhZD4KPGJvZHk+YXNzb2Np
+YSBvIGVtYWkmY2NlZGlsO2wgJmFncmF2ZTsgY29udGE/PC9ib2R5PjwvaHRtbD4=
+
+
+
+--b1_94286051aef7fa4911ff204c32d36190--
+
+

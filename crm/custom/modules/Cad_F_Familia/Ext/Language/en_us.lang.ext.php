@@ -1,0 +1,13 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_CAD_S_SOLUCOES_CAD_F_FAMILIA_FROM_CAD_S_SOLUCOES_TITLE'] = 'Soluções';
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_CAD_F_FAMILIA_CAD_U_CADASTRO_UNIDADES_FROM_CAD_U_CADASTRO_UNIDADES_TITLE'] = 'Cadastro Unidades';
+$mod_strings['LBL_CAD_F_FAMILIA_CAD_U_UNIDADES_FROM_CAD_U_UNIDADES_TITLE'] = 'cad_U_Unidades';
+
+?>
