@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2014-12-09 15:49:55
+<?php /* Smarty version 2.6.11, created on 2015-02-23 19:21:36
          compiled from include/SugarFields/Fields/Datetimecombo/SearchView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugarvar', 'include/SugarFields/Fields/Datetimecombo/SearchView.tpl', 41, false),)), $this); ?>
