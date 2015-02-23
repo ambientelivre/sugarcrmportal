@@ -1,0 +1,11 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_ANT_ESTOQUE_GERAL_ANT_PRODUTO_FROM_ANT_PRODUTO_TITLE'] = 'Produto';
+$mod_strings['LBL_ANT_ESTOQUE_GERAL_ANT_REGIONAIS_FROM_ANT_REGIONAIS_TITLE'] = 'Regionais';
+$mod_strings['LBL_ANT_ESTOQUE_GERAL_ANT_SECRETARIAS_FROM_ANT_SECRETARIAS_TITLE'] = 'Secretarias';
+$mod_strings['LBL_ANT_PRODUTO_ANT_ESTOQUE_GERAL_FROM_ANT_PRODUTO_TITLE'] = 'Produto';
+
+?>

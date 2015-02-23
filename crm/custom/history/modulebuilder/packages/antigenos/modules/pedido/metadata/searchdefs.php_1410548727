@@ -1,0 +1,65 @@
+<?php
+$module_name = 'ant_pedido';
+$searchdefs [$module_name] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'ped_codigo_boleto' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PED_CODIGO_BOLETO',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ped_codigo_boleto',
+      ),
+      'ped_status' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PED_STATUS',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ped_status',
+      ),
+      'date_entered' => 
+      array (
+        'type' => 'datetime',
+        'label' => 'LBL_DATE_ENTERED',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'date_entered',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'ped_codigo_boleto' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PED_CODIGO_BOLETO',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ped_codigo_boleto',
+      ),
+      'ped_status' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PED_STATUS',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ped_status',
+      ),
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'maxColumnsBasic' => '4',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+?>

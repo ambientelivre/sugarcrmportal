@@ -1,0 +1,13 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_ANT_SECRETARIAS_CONTACTS_FROM_ANT_SECRETARIAS_TITLE'] = 'Secretarias';
+$mod_strings['LBL_ANT_REGIONAIS_CONTACTS_FROM_ANT_REGIONAIS_TITLE'] = 'Regionais';
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_RR_TESTE_RAFAELA_CONTACTS_FROM_RR_TESTE_RAFAELA_TITLE'] = 'Teste Rafaela';
+
+?>

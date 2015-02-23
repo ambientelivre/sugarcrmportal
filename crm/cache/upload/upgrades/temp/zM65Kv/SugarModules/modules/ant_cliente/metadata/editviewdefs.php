@@ -1,0 +1,176 @@
+<?php
+$module_name = 'ant_cliente';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ant_clienteregionais_name',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ant_clientecretarias_name',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_razao_social',
+            'label' => 'LBL_CLI_RAZAO_SOCIAL',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_nm_fantasia',
+            'label' => 'LBL_CLI_NM_FANTASIA',
+          ),
+        ),
+        3 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_cep',
+            'label' => 'LBL_CLI_CEP',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_bairro',
+            'label' => 'LBL_CLI_BAIRRO',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_cidade',
+            'label' => 'LBL_CLI_CIDADE',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_estado',
+            'studio' => 'visible',
+            'label' => 'LBL_CLI_ESTADO',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_tp_logradouro',
+            'studio' => 'visible',
+            'label' => 'LBL_CLI_TP_LOGRADOURO',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_logradouro',
+            'label' => 'LBL_CLI_LOGRADOURO',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_numero',
+            'label' => 'LBL_CLI_NUMERO',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_complemento',
+            'label' => 'LBL_CLI_COMPLEMENTO',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_cnpj_cpf',
+            'label' => 'LBL_CLI_CNPJ_CPF',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_contato',
+            'label' => 'LBL_CLI_CONTATO',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_telefone',
+            'label' => 'LBL_CLI_TELEFONE',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_email',
+            'label' => 'LBL_CLI_EMAIL',
+          ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
+          ),
+          1 => 
+          array (
+            'name' => 'date_entered',
+            'comment' => 'Date record created',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'modified_by_name',
+            'label' => 'LBL_MODIFIED_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'date_modified',
+            'comment' => 'Date record last modified',
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

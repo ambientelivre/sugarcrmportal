@@ -1,0 +1,21 @@
+<?php
+$module_name = 'ant_estoque_geral';
+$listViewDefs [$module_name] = 
+array (
+  'ANT_ESTOQUET_PRODUTO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ant_estoqueal_ant_produto',
+    'label' => 'LBL_ANT_ESTOQUE_GERAL_ANT_PRODUTO_FROM_ANT_PRODUTO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'EG_LOTE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_EG_LOTE',
+    'width' => '10%',
+    'default' => true,
+  ),
+);
+?>

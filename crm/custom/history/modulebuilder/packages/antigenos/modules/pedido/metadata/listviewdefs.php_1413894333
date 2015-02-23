@@ -1,0 +1,13 @@
+<?php
+$module_name = 'ant_pedido';
+$listViewDefs [$module_name] = 
+array (
+  'PED_CODIGO_BOLETO' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PED_CODIGO_BOLETO',
+    'width' => '10%',
+    'default' => true,
+  ),
+);
+?>

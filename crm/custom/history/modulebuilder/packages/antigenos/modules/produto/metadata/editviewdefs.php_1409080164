@@ -1,0 +1,46 @@
+<?php
+$module_name = 'ant_produto';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pd_nome',
+            'label' => 'LBL_PD_NOME',
+          ),
+          1 => 
+          array (
+            'name' => 'pd_descricao',
+            'label' => 'LBL_PD_DESCRICAO',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

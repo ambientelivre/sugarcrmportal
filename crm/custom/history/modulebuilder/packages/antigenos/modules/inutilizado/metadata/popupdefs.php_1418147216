@@ -1,0 +1,79 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'ant_inutilizado',
+    'varName' => 'ant_inutilizado',
+    'orderBy' => 'ant_inutilizado.name',
+    'whereClauses' => array (
+  'name' => 'ant_inutilizado.name',
+),
+    'searchInputs' => array (
+  0 => 'ant_inutilizado_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'ANT_INUTILIREGIONAIS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ant_inutili_ant_regionais',
+    'label' => 'LBL_ANT_INUTILIZADO_ANT_REGIONAIS_FROM_ANT_REGIONAIS_TITLE',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'ant_inutiliregionais_name',
+  ),
+  'ANT_INUTILICRETARIAS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ant_inutilint_secretarias',
+    'label' => 'LBL_ANT_INUTILIZADO_ANT_SECRETARIAS_FROM_ANT_SECRETARIAS_TITLE',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'ant_inutilicretarias_name',
+  ),
+  'IN_DESTINO' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_IN_DESTINO',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'in_destino',
+  ),
+  'IN_OBS' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_IN_OBS',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'in_obs',
+  ),
+  'IN_DT_NF' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_IN_DT_NF',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'in_dt_nf',
+  ),
+  'IN_LINK' => 
+  array (
+    'type' => 'url',
+    'label' => 'LBL_IN_LINK',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'in_link',
+  ),
+  'IN_DATA' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_IN_DATA',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'in_data',
+  ),
+),
+);

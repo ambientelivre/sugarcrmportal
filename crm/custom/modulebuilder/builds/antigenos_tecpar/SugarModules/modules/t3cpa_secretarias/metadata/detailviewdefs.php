@@ -1,0 +1,176 @@
+<?php
+$module_name = 't3cpa_secretarias';
+$viewdefs [$module_name] = 
+array (
+  'DetailView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+    ),
+    'panels' => 
+    array (
+      'lbl_detailview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_razao_social',
+            'label' => 'LBL_SEC_RAZAO_SOCIAL',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_nm_fantasia',
+            'label' => 'LBL_SEC_NM_FANTASIA',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_tp_logradouro',
+            'label' => 'LBL_SEC_TP_LOGRADOURO',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_logradouro',
+            'label' => 'LBL_SEC_LOGRADOURO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_numero',
+            'label' => 'LBL_SEC_NUMERO',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_complemento',
+            'label' => 'LBL_SEC_COMPLEMENTO',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_bairro',
+            'label' => 'LBL_SEC_BAIRRO',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_cidade',
+            'label' => 'LBL_SEC_CIDADE',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_estado',
+            'label' => 'LBL_SEC_ESTADO',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_cep',
+            'label' => 'LBL_SEC_CEP',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_cnpj',
+            'label' => 'LBL_SEC_CNPJ',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_inscricao_estadual',
+            'label' => 'LBL_SEC_INSCRICAO_ESTADUAL',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_cnae',
+            'label' => 'LBL_SEC_CNAE',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_contato',
+            'label' => 'LBL_SEC_CONTATO',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_telefone',
+            'label' => 'LBL_SEC_TELEFONE',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_email',
+            'label' => 'LBL_SEC_EMAIL',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_pncebt',
+            'label' => 'LBL_SEC_PNCEBT',
+          ),
+          1 => 
+          array (
+            'name' => 'sec_pncebt_telefone',
+            'label' => 'LBL_SEC_PNCEBT_TELEFONE',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sec_pncebt_email',
+            'label' => 'LBL_SEC_PNCEBT_EMAIL',
+          ),
+          1 => '',
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 't3cpa_estoqcretarias_name',
+          ),
+          1 => '',
+        ),
+      ),
+    ),
+  ),
+);
+?>

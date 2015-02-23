@@ -1,0 +1,128 @@
+<?php
+$module_name = 'ant_cliente';
+$viewdefs [$module_name] = 
+array (
+  'DetailView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_razao_social',
+            'label' => 'LBL_CLI_RAZAO_SOCIAL',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_nm_fantasia',
+            'label' => 'LBL_CLI_NM_FANTASIA',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_cnpj_cpf',
+            'label' => 'LBL_CLI_CNPJ_CPF',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_email',
+            'label' => 'LBL_CLI_EMAIL',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_telefone',
+            'label' => 'LBL_CLI_TELEFONE',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_contato',
+            'label' => 'LBL_CLI_CONTATO',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_cidade',
+            'label' => 'LBL_CLI_CIDADE',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_estado',
+            'studio' => 'visible',
+            'label' => 'LBL_CLI_ESTADO',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_cep',
+            'label' => 'LBL_CLI_CEP',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_bairro',
+            'label' => 'LBL_CLI_BAIRRO',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cli_numero',
+            'label' => 'LBL_CLI_NUMERO',
+          ),
+          1 => 
+          array (
+            'name' => 'cli_logradouro',
+            'label' => 'LBL_CLI_LOGRADOURO',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ant_clienteregionais_name',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

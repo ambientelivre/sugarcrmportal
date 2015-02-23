@@ -1,0 +1,43 @@
+<?php
+$module_name = 'ant_produto';
+$listViewDefs [$module_name] = 
+array (
+  'PD_NOME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PD_NOME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PD_DESCRICAO' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PD_DESCRICAO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PD_DOSES' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PD_DOSES',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PD_VAL_UNIT' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_PD_VAL_UNIT',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PD_OBS' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_PD_OBS',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+  ),
+);
+?>
