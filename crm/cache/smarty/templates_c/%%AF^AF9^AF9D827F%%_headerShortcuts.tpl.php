@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-02-23 19:21:17
+<?php /* Smarty version 2.6.11, created on 2015-02-23 19:29:16
          compiled from themes/Sugar5/tpls/_headerShortcuts.tpl */ ?>
 <?php if (count ( $this->_tpl_vars['SHORTCUT_MENU'] ) > 0 && $this->_tpl_vars['MODULE_TAB'] != 'Home'): ?>
 <div id="shortcuts" class="headerList">

@@ -29905,3 +29905,9 @@ Mon Feb 23 19:21:31 2015 [14285][-none-][FATAL] Configuration variable date.time
 Mon Feb 23 19:21:33 2015 [14284][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
 Mon Feb 23 19:21:34 2015 [1891][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
 Mon Feb 23 19:21:36 2015 [1891][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
+Mon Feb 23 19:29:16 2015 [9987][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
+Mon Feb 23 19:29:17 2015 [9987][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
+Mon Feb 23 19:29:17 2015 [10167][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
+Mon Feb 23 19:29:17 2015 [10541][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
+Mon Feb 23 19:29:17 2015 [9988][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
+Mon Feb 23 19:29:18 2015 [10541][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone America/Sao_Paulo. Please set date.timezone="America/Sao_Paulo" in php.ini!
