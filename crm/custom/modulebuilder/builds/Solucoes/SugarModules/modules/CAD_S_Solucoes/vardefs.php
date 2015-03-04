@@ -34,78 +34,10 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$dictionary['CAD_S_Solucoes'] = array(
+$dictionary['Cad_S_Solucoes'] = array(
 	'table'=>'cad_s_solucoes',
 	'audited'=>true,
 	'fields'=>array (
-  'codigo' => 
-  array (
-    'required' => true,
-    'name' => 'codigo',
-    'vname' => 'LBL_CODIGO',
-    'type' => 'varchar',
-    'massupdate' => 0,
-    'comments' => '',
-    'help' => '',
-    'importable' => 'true',
-    'duplicate_merge' => 'disabled',
-    'duplicate_merge_dom_value' => '0',
-    'audited' => true,
-    'reportable' => true,
-    'len' => '255',
-    'size' => '20',
-  ),
-  'referencia' => 
-  array (
-    'required' => true,
-    'name' => 'referencia',
-    'vname' => 'LBL_REFERENCIA',
-    'type' => 'varchar',
-    'massupdate' => 0,
-    'comments' => '',
-    'help' => '',
-    'importable' => 'true',
-    'duplicate_merge' => 'disabled',
-    'duplicate_merge_dom_value' => '0',
-    'audited' => true,
-    'reportable' => true,
-    'len' => '255',
-    'size' => '20',
-  ),
-  'unidade_compra' => 
-  array (
-    'required' => false,
-    'name' => 'unidade_compra',
-    'vname' => 'LBL_UNIDADE_COMPRA',
-    'type' => 'varchar',
-    'massupdate' => 0,
-    'comments' => '',
-    'help' => '',
-    'importable' => 'true',
-    'duplicate_merge' => 'disabled',
-    'duplicate_merge_dom_value' => '0',
-    'audited' => true,
-    'reportable' => true,
-    'len' => '255',
-    'size' => '20',
-  ),
-  'unidade_venda' => 
-  array (
-    'required' => false,
-    'name' => 'unidade_venda',
-    'vname' => 'LBL_UNIDADE_VENDA',
-    'type' => 'varchar',
-    'massupdate' => 0,
-    'comments' => '',
-    'help' => '',
-    'importable' => 'true',
-    'duplicate_merge' => 'disabled',
-    'duplicate_merge_dom_value' => '0',
-    'audited' => true,
-    'reportable' => true,
-    'len' => '255',
-    'size' => '20',
-  ),
 ),
 	'relationships'=>array (
 ),
@@ -115,4 +47,4 @@ $dictionary['CAD_S_Solucoes'] = array(
 if (!class_exists('VardefManager')){
         require_once('include/SugarObjects/VardefManager.php');
 }
-VardefManager::createVardef('CAD_S_Solucoes','CAD_S_Solucoes', array('basic','assignable'));
+VardefManager::createVardef('Cad_S_Solucoes','Cad_S_Solucoes', array('basic','assignable'));

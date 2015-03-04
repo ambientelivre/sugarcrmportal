@@ -44,20 +44,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/Cad_F_Familia/Cad_F_Familia.php');
+require_once('modules/cad_F_Familia/cad_F_Familia.php');
 
-class Cad_F_FamiliaDashlet extends DashletGeneric { 
-    function Cad_F_FamiliaDashlet($id, $def = null) {
+class cad_F_FamiliaDashlet extends DashletGeneric { 
+    function cad_F_FamiliaDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/Cad_F_Familia/metadata/dashletviewdefs.php');
+		require('modules/cad_F_Familia/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'Cad_F_Familia');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'cad_F_Familia');
 
-        $this->searchFields = $dashletData['Cad_F_FamiliaDashlet']['searchFields'];
-        $this->columns = $dashletData['Cad_F_FamiliaDashlet']['columns'];
+        $this->searchFields = $dashletData['cad_F_FamiliaDashlet']['searchFields'];
+        $this->columns = $dashletData['cad_F_FamiliaDashlet']['columns'];
 
-        $this->seedBean = new Cad_F_Familia();        
+        $this->seedBean = new cad_F_Familia();        
     }
 }

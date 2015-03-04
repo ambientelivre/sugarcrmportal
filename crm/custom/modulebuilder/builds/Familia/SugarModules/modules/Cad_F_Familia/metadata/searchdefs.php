@@ -40,7 +40,7 @@
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
-$module_name = 'Cad_F_Familia';
+$module_name = 'cad_F_Familia';
   $searchdefs[$module_name] = array(
 					'templateMeta' => array(
 							'maxColumns' => '3',

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-02-23 18:37:24
+// created: 2015-03-02 13:09:58
 $GLOBALS["dictionary"]["cad_U_Unidades"] = array (
   'table' => 'cad_u_unidades',
   'audited' => true,

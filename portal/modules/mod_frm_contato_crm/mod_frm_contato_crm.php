@@ -8,7 +8,7 @@ echo "<h1>Entre em contato</h1>";
 	<link rel="stylesheet" type="text/css" media="all" href="./WebToLeadForm_1355501487_files/WebToLeadForm_1355501487.html">
 	<script type="text/javascript" src="./WebToLeadForm_1355501487_files/sugar_grp1.js"></script><script type="text/javascript" src="./WebToLeadForm_1355501487_files/calendar.js"></script>
 </p>
-<form action="http://sugar.tecpar.br/index.php?entryPoint=WebToLeadCapture" name="WebToLeadForm" method="POST" id="WebToLeadForm">
+<form action="<?php echo PROJECT_URL; ?>index.php?entryPoint=WebToLeadCapture" name="WebToLeadForm" method="POST" id="WebToLeadForm">
 	<table width="100%" style="border-top: 1px solid;
 	border-bottom: 1px solid;
 	padding: 10px 6px 12px 10px;

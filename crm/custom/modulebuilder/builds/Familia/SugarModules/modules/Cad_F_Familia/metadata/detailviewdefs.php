@@ -1,5 +1,5 @@
 <?php
-$module_name = 'Cad_F_Familia';
+$module_name = 'cad_F_Familia';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 
@@ -29,6 +29,7 @@ array (
           'field' => '30',
         ),
       ),
+      'useTabs' => false,
     ),
     'panels' => 
     array (
@@ -37,7 +38,7 @@ array (
         0 => 
         array (
           0 => 'name',
-          1 => 'assigned_user_name',
+          1 => '',
         ),
         1 => 
         array (
@@ -63,8 +64,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'cad_f_famil_unidades_name',
-            'label' => 'LBL_CAD_F_FAMILIA_CAD_U_CADASTRO_UNIDADES_FROM_CAD_U_CADASTRO_UNIDADES_TITLE',
+            'name' => 'cad_f_cadaseunidades_name',
           ),
         ),
       ),

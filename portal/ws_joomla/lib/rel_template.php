@@ -2,23 +2,20 @@
 <html>
     <head>
         <title><?php echo $_SESSION['categoria'] . ' ' . date('d/m/Y');?></title>
-    <link rel="stylesheet" type="text/css" href="../../lib/js/reveal/reveal.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
-    <script src="../../lib/js/reveal/jquery.reveal.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../style.css">
-    
-    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js" > </script>
+    <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/reveal/reveal.css">
+    <script type="text/javascript" src="<?php echo LIB_PATH; ?>/js/jquery.min.js"></script>
+    <script src="<?php echo LIB_PATH; ?>/reveal/jquery.reveal.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/css/style.css">
     
     <script type="text/javascript">    
-        $(function() {
+        $(document).ready(function() {
             $('.imprimir').click(function (){
                window.print() ;
             });
             
             $('.voltar').click(function (){
-               (window.document.location).attr('href','http://sugar.tecpar.br/portaldocliente');
-            });
-            
+               window.location.replace('<?php echo PROJECT_URL; ?>'); 
+            });            
         });
     </script>
         

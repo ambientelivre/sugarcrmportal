@@ -57,12 +57,14 @@ $mod_strings = array (
   'LBL_HOMEPAGE_TITLE' => 'Minha Família',
   'LNK_NEW_RECORD' => 'Criar Família',
   'LNK_LIST' => 'Vista Família',
-  'LNK_IMPORT_CAD_F_FAMILIA' => 'Importar Família',
+  'LNK_IMPORT_CAD_F_CADASTRO_FAMILIA' => 'Importar Família',
   'LBL_SEARCH_FORM_TITLE' => 'Pesquisar Família',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Ver Histórico',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Atividades',
-  'LBL_CAD_F_FAMILIA_SUBPANEL_TITLE' => 'Família',
+  'LBL_CAD_F_CADASTRO_FAMILIA_SUBPANEL_TITLE' => 'Família',
   'LBL_NEW_FORM_TITLE' => 'Novo Família',
-  'LBL_CODIGO' => 'Codigo',
+  'LBL_UNIDADE' => 'Unidade',
+  'LNK_IMPORT_CAD_F_FAMILIA' => 'Importar Família',
+  'LBL_CAD_F_FAMILIA_SUBPANEL_TITLE' => 'Família',
 );
 ?>

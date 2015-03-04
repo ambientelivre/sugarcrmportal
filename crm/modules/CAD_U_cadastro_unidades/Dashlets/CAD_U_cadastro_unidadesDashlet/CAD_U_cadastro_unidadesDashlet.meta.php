@@ -45,8 +45,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 global $app_strings;
 
-$dashletMeta['CAD_U_cadastro_unidadesDashlet'] = array('module'		=> 'CAD_U_cadastro_unidades',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'CAD_U_cadastro_unidades'), 
-                                          'description' => 'A customizable view into CAD_U_cadastro_unidades',
-                                          'icon'        => 'icon_CAD_U_cadastro_unidades_32.gif',
+$dashletMeta['Cad_U_Cadastro_UnidadesDashlet'] = array('module'		=> 'Cad_U_Cadastro_Unidades',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'Cad_U_Cadastro_Unidades'), 
+                                          'description' => 'A customizable view into Cad_U_Cadastro_Unidades',
+                                          'icon'        => 'icon_Cad_U_Cadastro_Unidades_32.gif',
                                           'category'    => 'Module Views');

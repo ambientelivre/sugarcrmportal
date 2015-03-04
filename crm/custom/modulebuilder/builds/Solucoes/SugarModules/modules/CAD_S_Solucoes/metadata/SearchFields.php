@@ -35,7 +35,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name = 'CAD_S_Solucoes';
+$module_name = 'Cad_S_Solucoes';
 $searchFields[$module_name] = 
 	array (
 		'name' => array( 'query_type'=>'default'),

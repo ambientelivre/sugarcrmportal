@@ -37,11 +37,11 @@
 /**
  * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
  */
-require_once('modules/CAD_S_Solucoes/CAD_S_Solucoes_sugar.php');
-class CAD_S_Solucoes extends CAD_S_Solucoes_sugar {
+require_once('modules/Cad_S_Solucoes/Cad_S_Solucoes_sugar.php');
+class Cad_S_Solucoes extends Cad_S_Solucoes_sugar {
 	
-	function CAD_S_Solucoes(){	
-		parent::CAD_S_Solucoes_sugar();
+	function Cad_S_Solucoes(){	
+		parent::Cad_S_Solucoes_sugar();
 	}
 	
 }

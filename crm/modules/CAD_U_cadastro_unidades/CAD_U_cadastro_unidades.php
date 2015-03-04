@@ -37,11 +37,11 @@
 /**
  * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
  */
-require_once('modules/CAD_U_cadastro_unidades/CAD_U_cadastro_unidades_sugar.php');
-class CAD_U_cadastro_unidades extends CAD_U_cadastro_unidades_sugar {
+require_once('modules/Cad_U_Cadastro_Unidades/Cad_U_Cadastro_Unidades_sugar.php');
+class Cad_U_Cadastro_Unidades extends Cad_U_Cadastro_Unidades_sugar {
 	
-	function CAD_U_cadastro_unidades(){	
-		parent::CAD_U_cadastro_unidades_sugar();
+	function Cad_U_Cadastro_Unidades(){	
+		parent::Cad_U_Cadastro_Unidades_sugar();
 	}
 	
 }

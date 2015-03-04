@@ -38,6 +38,6 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 global $mod_strings, $app_strings, $sugar_config;
  
-if(ACLController::checkAccess('CAD_U_cadastro_unidades', 'edit', true))$module_menu[]=Array("index.php?module=CAD_U_cadastro_unidades&action=EditView&return_module=CAD_U_cadastro_unidades&return_action=DetailView", $mod_strings['LNK_NEW_RECORD'],"CreateCAD_U_cadastro_unidades", 'CAD_U_cadastro_unidades');
-if(ACLController::checkAccess('CAD_U_cadastro_unidades', 'list', true))$module_menu[]=Array("index.php?module=CAD_U_cadastro_unidades&action=index&return_module=CAD_U_cadastro_unidades&return_action=DetailView", $mod_strings['LNK_LIST'],"CAD_U_cadastro_unidades", 'CAD_U_cadastro_unidades');
-if(ACLController::checkAccess('CAD_U_cadastro_unidades', 'import', true))$module_menu[]=Array("index.php?module=Import&action=Step1&import_module=CAD_U_cadastro_unidades&return_module=CAD_U_cadastro_unidades&return_action=index", $app_strings['LBL_IMPORT'],"Import", 'CAD_U_cadastro_unidades');
+if(ACLController::checkAccess('Cad_U_Cadastro_Unidades', 'edit', true))$module_menu[]=Array("index.php?module=Cad_U_Cadastro_Unidades&action=EditView&return_module=Cad_U_Cadastro_Unidades&return_action=DetailView", $mod_strings['LNK_NEW_RECORD'],"CreateCad_U_Cadastro_Unidades", 'Cad_U_Cadastro_Unidades');
+if(ACLController::checkAccess('Cad_U_Cadastro_Unidades', 'list', true))$module_menu[]=Array("index.php?module=Cad_U_Cadastro_Unidades&action=index&return_module=Cad_U_Cadastro_Unidades&return_action=DetailView", $mod_strings['LNK_LIST'],"Cad_U_Cadastro_Unidades", 'Cad_U_Cadastro_Unidades');
+if(ACLController::checkAccess('Cad_U_Cadastro_Unidades', 'import', true))$module_menu[]=Array("index.php?module=Import&action=Step1&import_module=Cad_U_Cadastro_Unidades&return_module=Cad_U_Cadastro_Unidades&return_action=index", $app_strings['LBL_IMPORT'],"Import", 'Cad_U_Cadastro_Unidades');

@@ -45,26 +45,26 @@
             'CE', 'PRO','ENT'
           ),
           'readme'=>'',
-          'key'=>'CADUN',
-          'author' => '',
+          'key'=>'Cad_U',
+          'author' => 'Rafaela Raganham',
           'description' => '',
           'icon' => '',
           'is_uninstallable' => true,
-          'name' => 'Cadastro_Unidades',
-          'published_date' => '2012-01-25 17:09:39',
+          'name' => 'cadastro_unidades',
+          'published_date' => '2012-01-25 15:18:57',
           'type' => 'module',
-          'version' => '1327511379',
+          'version' => '1327504737',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
-  'id' => 'Cadastro_Unidades',
+  'id' => 'cadastro_unidades',
   'beans' => 
   array (
     0 => 
     array (
-      'module' => 'CADUN_CadastrodeUnidades',
-      'class' => 'CADUN_CadastrodeUnidades',
-      'path' => 'modules/CADUN_CadastrodeUnidades/CADUN_CadastrodeUnidades.php',
+      'module' => 'Cad_U_Cadastro_Unidades',
+      'class' => 'Cad_U_Cadastro_Unidades',
+      'path' => 'modules/Cad_U_Cadastro_Unidades/Cad_U_Cadastro_Unidades.php',
       'tab' => true,
     ),
   ),
@@ -79,8 +79,8 @@ $installdefs = array (
   array (
     0 => 
     array (
-      'from' => '<basepath>/SugarModules/modules/CADUN_CadastrodeUnidades',
-      'to' => 'modules/CADUN_CadastrodeUnidades',
+      'from' => '<basepath>/SugarModules/modules/Cad_U_Cadastro_Unidades',
+      'to' => 'modules/Cad_U_Cadastro_Unidades',
     ),
   ),
   'language' => 

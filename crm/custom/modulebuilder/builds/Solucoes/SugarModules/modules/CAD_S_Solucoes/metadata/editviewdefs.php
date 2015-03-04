@@ -1,5 +1,5 @@
 <?php
-$module_name = 'CAD_S_Solucoes';
+$module_name = 'Cad_S_Solucoes';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -20,7 +20,6 @@ array (
           'field' => '30',
         ),
       ),
-      'useTabs' => false,
     ),
     'panels' => 
     array (
@@ -29,14 +28,14 @@ array (
         0 => 
         array (
           0 => 'name',
+          1 => 'assigned_user_name',
         ),
         1 => 
         array (
           0 => 'description',
           1 => 
           array (
-            'name' => 'cad_s_solucf_familia_name',
-            'label' => 'LBL_CAD_S_SOLUCOES_CAD_F_FAMILIA_FROM_CAD_F_FAMILIA_TITLE',
+            'name' => 'cad_s_soluco_familia_name',
           ),
         ),
       ),

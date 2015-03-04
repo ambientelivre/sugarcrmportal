@@ -1,5 +1,5 @@
 <?php
-// created: 2015-02-23 19:21:36
+// created: 2015-03-03 10:40:49
 $GLOBALS["dictionary"]["ant_regionais"] = array (
   'table' => 'ant_regionais',
   'audited' => true,

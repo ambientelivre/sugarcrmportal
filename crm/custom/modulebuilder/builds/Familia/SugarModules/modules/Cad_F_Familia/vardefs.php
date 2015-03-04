@@ -34,25 +34,25 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$dictionary['Cad_F_Familia'] = array(
+$dictionary['cad_F_Familia'] = array(
 	'table'=>'cad_f_familia',
 	'audited'=>true,
 	'fields'=>array (
-  'codigo' => 
+  'cad_u_cadastro_unidades_id_c' => 
   array (
-    'required' => true,
-    'name' => 'codigo',
-    'vname' => 'LBL_CODIGO',
-    'type' => 'varchar',
+    'required' => false,
+    'name' => 'cad_u_cadastro_unidades_id_c',
+    'vname' => '',
+    'type' => 'id',
     'massupdate' => 0,
     'comments' => '',
     'help' => '',
     'importable' => 'true',
     'duplicate_merge' => 'disabled',
-    'duplicate_merge_dom_value' => '0',
+    'duplicate_merge_dom_value' => 0,
     'audited' => false,
     'reportable' => true,
-    'len' => '255',
+    'len' => 36,
     'size' => '20',
   ),
 ),
@@ -64,4 +64,4 @@ $dictionary['Cad_F_Familia'] = array(
 if (!class_exists('VardefManager')){
         require_once('include/SugarObjects/VardefManager.php');
 }
-VardefManager::createVardef('Cad_F_Familia','Cad_F_Familia', array('basic','assignable'));
+VardefManager::createVardef('cad_F_Familia','cad_F_Familia', array('basic','assignable'));

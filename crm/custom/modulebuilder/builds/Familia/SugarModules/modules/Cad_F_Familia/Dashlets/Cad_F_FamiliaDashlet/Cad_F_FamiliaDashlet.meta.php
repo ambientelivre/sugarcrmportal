@@ -45,8 +45,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 global $app_strings;
 
-$dashletMeta['Cad_F_FamiliaDashlet'] = array('module'		=> 'Cad_F_Familia',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'Cad_F_Familia'), 
-                                          'description' => 'A customizable view into Cad_F_Familia',
-                                          'icon'        => 'icon_Cad_F_Familia_32.gif',
+$dashletMeta['cad_F_FamiliaDashlet'] = array('module'		=> 'cad_F_Familia',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'cad_F_Familia'), 
+                                          'description' => 'A customizable view into cad_F_Familia',
+                                          'icon'        => 'icon_cad_F_Familia_32.gif',
                                           'category'    => 'Module Views');

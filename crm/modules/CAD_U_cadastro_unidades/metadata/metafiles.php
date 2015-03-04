@@ -40,7 +40,7 @@
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
-$module_name = 'CAD_U_cadastro_unidades';
+$module_name = 'Cad_U_Cadastro_Unidades';
  $metafiles[$module_name] = array(
 	'detailviewdefs'  => 	'modules/' . $module_name . '/metadata/detailviewdefs.php', 	
 	'editviewdefs'    => 	'modules/' . $module_name . '/metadata/editviewdefs.php',

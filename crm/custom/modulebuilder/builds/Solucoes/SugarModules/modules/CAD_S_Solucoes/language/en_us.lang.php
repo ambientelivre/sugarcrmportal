@@ -63,9 +63,5 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_CAD_S_SOLUCOES_SUBPANEL_TITLE' => 'Soluções',
   'LBL_NEW_FORM_TITLE' => 'New Soluções',
-  'LBL_CODIGO' => 'Codigo',
-  'LBL_REFERENCIA' => 'Referencia',
-  'LBL_UNIDADE_COMPRA' => 'Unidade compra',
-  'LBL_UNIDADE_VENDA' => 'Unidade Venda',
 );
 ?>

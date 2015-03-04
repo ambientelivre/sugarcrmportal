@@ -1,14 +1,7 @@
 <?php
-$module_name = 'Cad_F_Familia';
+$module_name = 'cad_F_Familia';
 $listViewDefs [$module_name] = 
 array (
-  'CODIGO' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CODIGO',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NAME' => 
   array (
     'width' => '32%',

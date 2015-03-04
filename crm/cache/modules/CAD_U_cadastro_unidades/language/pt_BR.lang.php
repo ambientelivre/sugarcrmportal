@@ -1,8 +1,6 @@
 <?php
-// created: 2014-11-27 11:26:51
+// created: 2015-02-23 18:37:24
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Atribuído a',
-  'LBL_ASSIGNED_TO_NAME' => 'Atribuído a',
   'LBL_LIST_NAME' => 'Nome',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Data da Criação',
@@ -17,6 +15,8 @@ $mod_strings = array (
   'LBL_NAME' => 'Nome',
   'LBL_CREATED_USER' => 'Criado por Usuário',
   'LBL_MODIFIED_USER' => 'Modificado por Usuário',
+  'LBL_ASSIGNED_TO_ID' => 'Atribuído a',
+  'LBL_ASSIGNED_TO_NAME' => 'Atribuído a',
   'LBL_LIST_FORM_TITLE' => 'Cadastro Unidades Lista',
   'LBL_MODULE_NAME' => 'Cadastro Unidades',
   'LBL_MODULE_TITLE' => 'Cadastro Unidades',
@@ -29,7 +29,5 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Atividades',
   'LBL_CAD_U_CADASTRO_UNIDADES_SUBPANEL_TITLE' => 'Cadastro Unidades',
   'LBL_NEW_FORM_TITLE' => 'Novo Cadastro Unidades',
-  'LBL_CODIGO' => 'Código',
-  'LBL_EDITVIEW_PANEL1' => 'Novo Painel 1',
 );
 ?>

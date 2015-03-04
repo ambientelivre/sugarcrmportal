@@ -35,8 +35,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name = 'CAD_U_cadastro_unidades';
-$object_name = 'CAD_U_cadastro_unidades';
+$module_name = 'Cad_U_Cadastro_Unidades';
+$object_name = 'Cad_U_Cadastro_Unidades';
 $_module_name = 'cad_u_cadastro_unidades';
 $popupMeta = array('moduleMain' => $module_name,
 						'varName' => $object_name,

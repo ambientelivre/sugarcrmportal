@@ -35,8 +35,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name = 'Cad_F_Familia';
-$object_name = 'Cad_F_Familia';
+$module_name = 'cad_F_Familia';
+$object_name = 'cad_F_Familia';
 $_module_name = 'cad_f_familia';
 $popupMeta = array('moduleMain' => $module_name,
 						'varName' => $object_name,

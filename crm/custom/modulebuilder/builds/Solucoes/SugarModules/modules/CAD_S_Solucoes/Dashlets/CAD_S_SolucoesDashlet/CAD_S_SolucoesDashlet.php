@@ -44,20 +44,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/CAD_S_Solucoes/CAD_S_Solucoes.php');
+require_once('modules/Cad_S_Solucoes/Cad_S_Solucoes.php');
 
-class CAD_S_SolucoesDashlet extends DashletGeneric { 
-    function CAD_S_SolucoesDashlet($id, $def = null) {
+class Cad_S_SolucoesDashlet extends DashletGeneric { 
+    function Cad_S_SolucoesDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/CAD_S_Solucoes/metadata/dashletviewdefs.php');
+		require('modules/Cad_S_Solucoes/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'CAD_S_Solucoes');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'Cad_S_Solucoes');
 
-        $this->searchFields = $dashletData['CAD_S_SolucoesDashlet']['searchFields'];
-        $this->columns = $dashletData['CAD_S_SolucoesDashlet']['columns'];
+        $this->searchFields = $dashletData['Cad_S_SolucoesDashlet']['searchFields'];
+        $this->columns = $dashletData['Cad_S_SolucoesDashlet']['columns'];
 
-        $this->seedBean = new CAD_S_Solucoes();        
+        $this->seedBean = new Cad_S_Solucoes();        
     }
 }

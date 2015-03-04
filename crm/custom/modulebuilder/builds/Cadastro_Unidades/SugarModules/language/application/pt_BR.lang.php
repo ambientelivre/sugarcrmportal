@@ -35,4 +35,4 @@
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['CADUN_CadastrodeUnidades'] = 'Unidade';
+$app_list_strings['moduleList']['Cad_U_Cadastro_Unidades'] = 'Cadastro Unidades';

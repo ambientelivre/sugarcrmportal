@@ -108,7 +108,7 @@
         <div id="container">
             <div id="content">
                 
-                <form id="con_form" method="POST" action="http://sugar.tecpar.br/portaldocliente/ws_joomla/ctrl/ctrl_contatos.php">
+                <form id="con_form" method="POST" action="<?php echo PROJECT_URL; ?>ws_joomla/ctrl/ctrl_contatos.php">
                     
                     <?php if($key != 'AC' && $key != 'EX'){ ?>
                     <div class="h_div" id="" style="">

@@ -63,7 +63,5 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Atividades',
   'LBL_CAD_U_CADASTRO_UNIDADES_SUBPANEL_TITLE' => 'Cadastro Unidades',
   'LBL_NEW_FORM_TITLE' => 'Novo Cadastro Unidades',
-  'LBL_CODIGO' => 'Código',
-  'LBL_EDITVIEW_PANEL1' => 'Novo Painel 1',
 );
 ?>

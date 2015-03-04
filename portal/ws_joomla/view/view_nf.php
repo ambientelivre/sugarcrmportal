@@ -90,7 +90,7 @@
             <div id="content">
                 
                 <div class="h_div" id="" style="">
-                    <form id="con_form" method="POST" action="http://sugar.tecpar.br/portaldocliente/ws_joomla/ctrl/ctrl_nf.php">
+                    <form id="con_form" method="POST" action="<?php echo PROJECT_URL; ?>ws_joomla/ctrl/ctrl_nf.php">
                     <table border='0'>
                         <tr>
                             <td>Ped: </td>

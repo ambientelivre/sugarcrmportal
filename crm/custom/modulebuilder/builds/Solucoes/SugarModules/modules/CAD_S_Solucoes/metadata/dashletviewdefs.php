@@ -40,11 +40,11 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 global $current_user;
 
-$dashletData['CAD_S_SolucoesDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+$dashletData['Cad_S_SolucoesDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
                                                           'date_modified'    => array('default' => ''),
                                                           'assigned_user_id' => array('type'    => 'assigned_user_name', 
                                                                                       'default' => $current_user->name));
-$dashletData['CAD_S_SolucoesDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+$dashletData['Cad_S_SolucoesDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 

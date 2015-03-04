@@ -44,20 +44,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/CAD_U_cadastro_unidades/CAD_U_cadastro_unidades.php');
+require_once('modules/Cad_U_Cadastro_Unidades/Cad_U_Cadastro_Unidades.php');
 
-class CAD_U_cadastro_unidadesDashlet extends DashletGeneric { 
-    function CAD_U_cadastro_unidadesDashlet($id, $def = null) {
+class Cad_U_Cadastro_UnidadesDashlet extends DashletGeneric { 
+    function Cad_U_Cadastro_UnidadesDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/CAD_U_cadastro_unidades/metadata/dashletviewdefs.php');
+		require('modules/Cad_U_Cadastro_Unidades/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'CAD_U_cadastro_unidades');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'Cad_U_Cadastro_Unidades');
 
-        $this->searchFields = $dashletData['CAD_U_cadastro_unidadesDashlet']['searchFields'];
-        $this->columns = $dashletData['CAD_U_cadastro_unidadesDashlet']['columns'];
+        $this->searchFields = $dashletData['Cad_U_Cadastro_UnidadesDashlet']['searchFields'];
+        $this->columns = $dashletData['Cad_U_Cadastro_UnidadesDashlet']['columns'];
 
-        $this->seedBean = new CAD_U_cadastro_unidades();        
+        $this->seedBean = new Cad_U_Cadastro_Unidades();        
     }
 }

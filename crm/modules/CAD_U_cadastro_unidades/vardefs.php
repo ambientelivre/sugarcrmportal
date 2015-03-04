@@ -34,27 +34,10 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$dictionary['CAD_U_cadastro_unidades'] = array(
+$dictionary['Cad_U_Cadastro_Unidades'] = array(
 	'table'=>'cad_u_cadastro_unidades',
 	'audited'=>true,
 	'fields'=>array (
-  'codigo' => 
-  array (
-    'required' => true,
-    'name' => 'codigo',
-    'vname' => 'LBL_CODIGO',
-    'type' => 'varchar',
-    'massupdate' => 0,
-    'comments' => '',
-    'help' => '',
-    'importable' => 'true',
-    'duplicate_merge' => 'disabled',
-    'duplicate_merge_dom_value' => '0',
-    'audited' => false,
-    'reportable' => true,
-    'len' => '255',
-    'size' => '20',
-  ),
 ),
 	'relationships'=>array (
 ),
@@ -64,4 +47,4 @@ $dictionary['CAD_U_cadastro_unidades'] = array(
 if (!class_exists('VardefManager')){
         require_once('include/SugarObjects/VardefManager.php');
 }
-VardefManager::createVardef('CAD_U_cadastro_unidades','CAD_U_cadastro_unidades', array('basic','assignable'));
+VardefManager::createVardef('Cad_U_Cadastro_Unidades','Cad_U_Cadastro_Unidades', array('basic','assignable'));

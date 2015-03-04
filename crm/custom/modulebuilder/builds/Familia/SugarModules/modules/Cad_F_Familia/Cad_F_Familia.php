@@ -37,11 +37,11 @@
 /**
  * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
  */
-require_once('modules/Cad_F_Familia/Cad_F_Familia_sugar.php');
-class Cad_F_Familia extends Cad_F_Familia_sugar {
+require_once('modules/cad_F_Familia/cad_F_Familia_sugar.php');
+class cad_F_Familia extends cad_F_Familia_sugar {
 	
-	function Cad_F_Familia(){	
-		parent::Cad_F_Familia_sugar();
+	function cad_F_Familia(){	
+		parent::cad_F_Familia_sugar();
 	}
 	
 }

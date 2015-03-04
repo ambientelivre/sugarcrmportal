@@ -1,5 +1,5 @@
 <?php
-$module_name = 'Cad_F_Familia';
+$module_name = 'cad_F_Familia';
 $viewdefs [$module_name] = 
 array (
   'QuickCreate' => 
@@ -28,12 +28,13 @@ array (
       array (
         0 => 
         array (
-          0 => 
+          0 => 'name',
+          1 => 
           array (
-            'name' => 'codigo',
-            'label' => 'LBL_CODIGO',
+            'name' => 'unidade',
+            'studio' => 'visible',
+            'label' => 'LBL_UNIDADE',
           ),
-          1 => 'name',
         ),
       ),
     ),
