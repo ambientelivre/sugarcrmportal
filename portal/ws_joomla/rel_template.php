@@ -1,11 +1,13 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
 <html>
     <head>
-        <title><?php echo $_SESSION['categoria'] . ' ' . date('d/m/Y');?></title>
-    <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/reveal/reveal.css">
-    <script type="text/javascript" src="<?php echo LIB_PATH; ?>/js/jquery.min.js"></script>
-    <script src="<?php echo LIB_PATH; ?>/reveal/jquery.reveal.js"></script>
-    <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/css/style.css">
+        <meta charset="utf-8"> 
+        <title><?php echo $_SESSION['categoria'] . ' ' . date('d/m/Y');?></title>        
+        <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/reveal/reveal.css">    
+        <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/css/style.css">
+        <!-- Reveal Modal Plugin só funciona com jquery 1.6... -->
+        <script type="text/javascript" src="<?php echo LIB_PATH; ?>/js/jquery-1.6.min.js"></script>
+        <script src="<?php echo LIB_PATH; ?>/reveal/jquery.reveal.js"></script>
     
     <script type="text/javascript">    
         $(document).ready(function() {

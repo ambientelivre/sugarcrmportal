@@ -59,23 +59,20 @@ function inserirDados($sql){
     
     }
     
-    function geraTxt(){
+    // Função não desenvolvida até então...
+    function gerarTxtAtendimentoPedido($arrayPedido){
         
-        $fp = fopen("../lib/erpaccess.txt", "a");
+        $nomePedido = "";
+        $fp = fopen(LIB_PATH."/pedido/".$nomePedido.".txt", "a");
         
-        if(!$fp){
-            
+        if(!$fp){            
             fclose($fp);
             $mensagem = 'Arquivo não pode ser aberto ou inexistente.';
             throw new Exception($mensagem);
-            return; 
-            
-        } else {
-            
-            $escreve = fwrite($fp, "exemplo de escrita");
-        
-            fclose($fp);
-            
+            return;             
+        } else {            
+            $escreve = fwrite($fp, "exemplo de escrita");        
+            fclose($fp);            
             return;
         }
         

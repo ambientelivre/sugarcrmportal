@@ -1,13 +1,13 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../lib/js/reveal/reveal.css">
-        <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>-->
-        <script src="../lib/js/reveal/jquery.reveal.js"></script>
-        <script src="../lib/js/ajax.js"></script>
-        <link rel="stylesheet" type="text/css" href="../style.css">
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/reveal/reveal.css">    
+        <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/css/style.css">
+        <!-- Reveal Modal Plugin só funciona com jquery 1.6... -->
+        <script type="text/javascript" src="<?php echo LIB_PATH; ?>/js/jquery-1.6.min.js"></script>
+        <script src="<?php echo LIB_PATH; ?>/reveal/jquery.reveal.js"></script>
+        <script src="<?php echo LIB_PATH; ?>/js/ajax.js"></script>
 
-        <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js" > </script>
-        
         <style>
             
             .h_div{
