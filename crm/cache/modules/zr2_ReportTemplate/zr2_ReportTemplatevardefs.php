@@ -1,5 +1,5 @@
 <?php
-// created: 2015-03-05 09:41:06
+// created: 2015-03-06 10:56:04
 $GLOBALS["dictionary"]["zr2_ReportTemplate"] = array (
   'table' => 'zr2_reporttemplate',
   'fields' => 

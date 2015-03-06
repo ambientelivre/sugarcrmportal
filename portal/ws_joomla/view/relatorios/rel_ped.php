@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
-<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-<script src="http://harvesthq.github.com/chosen/chosen/chosen.jquery.js"></script>
-<link rel="stylesheet" href="http://harvesthq.github.com/chosen/chosen/chosen.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.js" type="text/javascript"></script>
+<link rel="stylesheet" href="<?php echo LIB_PATH; ?>/jquery-ui/jquery-ui.css">
+<script src="<?php echo LIB_PATH; ?>/js/jquery.min.js"></script>
+<script src="<?php echo LIB_PATH; ?>/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?php echo LIB_PATH; ?>/chosen/chosen.jquery.min.js"></script>
+<link rel="stylesheet" href="<?php echo LIB_PATH; ?>/chosen/chosen.min.css">
 
 <script type="text/javascript">
     $(function(){
@@ -37,10 +36,6 @@
     });
 </script>
 
-<style type="text/css">
-    @import url(https://cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.css);
-</style>
-
 <style>
 .calendario {
     padding: 5px 5px 5px 5px;
@@ -51,13 +46,15 @@
 </style>
 
         <?php
+        include_once '../../model/conexao.class.php';
+        /*
             $con=mysqli_connect("localhost","ambientelivre","sugarsql123","homologacao_sugarcrm");
             // Check connection
             if (mysqli_connect_errno()) {
               echo "Failed to connect to MySQL: " . mysqli_connect_error();
             }
-
-                $sql = "SELECT * FROM homologacao_sugarcrm.ant_secretarias WHERE deleted=0";
+*/
+                $sql = "SELECT * FROM ant_secretarias WHERE deleted=0";
 
                 $result = mysql_query($sql);   
 
@@ -74,14 +71,14 @@
                     $i++;
 
                 } 
-                
+/*                
                 $con=mysqli_connect("localhost","ambientelivre","sugarsql123","homologacao_sugarcrm");
                 // Check connection
                 if (mysqli_connect_errno()) {
                   echo "Failed to connect to MySQL: " . mysqli_connect_error();
                 }
-
-                    $sql = "SELECT * FROM homologacao_sugarcrm.ant_regionais  WHERE deleted=0";
+*/
+                    $sql = "SELECT * FROM ant_regionais  WHERE deleted=0";
 
                     $result = mysql_query($sql);   
 
@@ -99,7 +96,7 @@
 
                     } 
                     
-                    $sql = "SELECT * FROM homologacao_sugarcrm.ant_cliente WHERE deleted = 0";
+                    $sql = "SELECT * FROM ant_cliente WHERE deleted = 0";
                     
                         $result = mysql_query($sql);   
 

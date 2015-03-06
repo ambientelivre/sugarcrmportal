@@ -1,13 +1,15 @@
 <?php
+include_once '../model/conexao.class.php';
+/*
         $con=mysqli_connect("localhost","ambientelivre","sugarsql123","portal_homologacao");
         
         // Check connection
         if (mysqli_connect_errno()) {
           echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
-            
+            */
         //Resgata as Regionais do Banco
-        $sql = "SELECT * FROM homologacao_sugarcrm.ant_regionais WHERE id = " . $_REQUEST['ct_reg'] . " LIMIT 0 , 30";
+        $sql = "SELECT * FROM ant_regionais WHERE id = " . $_REQUEST['ct_reg'] . " LIMIT 0 , 30";
 
         $result = mysql_query($sql);   
 
@@ -28,7 +30,7 @@
         }
         
         //Resgata as Secretarias do Banco
-        $sql = "SELECT * FROM homologacao_sugarcrm.ant_secretarias WHERE id = " . $_REQUEST['ct_sec'] . " LIMIT 0 , 30";
+        $sql = "SELECT * FROM ant_secretarias WHERE id = " . $_REQUEST['ct_sec'] . " LIMIT 0 , 30";
 
         $result = mysql_query($sql);   
 

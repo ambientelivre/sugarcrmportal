@@ -229,7 +229,7 @@ $(function(){
 
     function geraUrlUploadFile(radial,txt){
 
-        var url = 'http://sugar.tecpar.br/portaldocliente/ws_joomla/ctrl/ctrl_upload.php?categoria=' + getRadialVal(radial) + '&cod_arquivo=' + getInputTextVal(txt) + '&acao=U';
+        var url = '../ws_joomla/ctrl/ctrl_upload.php?categoria=' + getRadialVal(radial) + '&cod_arquivo=' + getInputTextVal(txt) + '&acao=U';
 
         return url;
     }
@@ -588,7 +588,7 @@ $(function(){
         //FUNÇÃO QUE GERA UMA URL DETERMINADA PARA UPLOAD DE ARQUIVO
         function geraUrlUploadFile(radial,txt){
 
-            var url = 'http://sugar.tecpar.br/portaldocliente/ws_joomla/ctrl/ctrl_upload.php?categoria=' + getRadialVal(radial) + '&cod_arquivo=' + getInputTextVal(txt) + '&acao=U';
+            var url = '../ws_joomla/ctrl/ctrl_upload.php?categoria=' + getRadialVal(radial) + '&cod_arquivo=' + getInputTextVal(txt) + '&acao=U';
 
             return url;
         }

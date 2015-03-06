@@ -1,12 +1,13 @@
 <?php
 
 class Conexao{
-    private $_host = 'localhost';
-    private $_user = 'ambientelivre';
-    private $_pass = 'sugarsql123';
-    private $_data_base = 'portal_homologacao';
+    private $_host = 'mysql20.ambientelivre.com.br ';
+    private $_user = 'ambientelivre25';
+    private $_pass = 'sejalivre';
+    private $_data_base = 'ambientelivre25';
     public $_con = '';
 
+    
     function __construct() {
         $this->conectar();   
     }

@@ -4,7 +4,7 @@ $(function(){
 
     function geraUrlUploadFile(radial,txt){
         
-        var url = '<?php echo PROJECT_URL; ?>ws_joomla/ctrl/ctrl_upload.php?categoria=' + getRadialVal(radial) + '&cod_arquivo=' + getInputTextVal(txt) + '&acao=U';
+        var url = '../ws_joomla/ctrl/ctrl_upload.php?categoria=' + getRadialVal(radial) + '&cod_arquivo=' + getInputTextVal(txt) + '&acao=U';
 
         return url;
     }
@@ -18,7 +18,7 @@ $(function(){
       if(cliente !== ''){
 
           $.ajax({
-              url: '<?php echo PROJECT_URL; ?>ws_joomla/ctrl/ctrl_cliente_veterinario.php?acao=B&cliente=' + cliente,
+              url: '../ws_joomla/ctrl/ctrl_cliente_veterinario.php?acao=B&cliente=' + cliente,
               dataType : "json",
               success: function(cliente) {
                   montaTelaCliente(cliente);
@@ -283,7 +283,7 @@ $('#ct_sec option').click(function(){
     var con_sec = $('#ct_sec').val();
    
           $.ajax({
-              url: '<?php echo PROJECT_URL; ?>ws_joomla/ctrl/ctrl_contatos.php?acao=BS&sec=' + con_sec,
+              url: '../ws_joomla/ctrl/ctrl_contatos.php?acao=BS&sec=' + con_sec,
               dataType : "json",
               success: function(regionais) {
                   montaRegional(regionais);

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2014-12-09 14:42:13
+<?php /* Smarty version 2.6.11, created on 2015-03-06 10:56:05
          compiled from cache/modules/ant_regionais/DetailView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/modules/ant_regionais/DetailView.tpl', 28, false),array('function', 'counter', 'cache/modules/ant_regionais/DetailView.tpl', 33, false),array('function', 'sugar_translate', 'cache/modules/ant_regionais/DetailView.tpl', 57, false),array('modifier', 'strip_semicolon', 'cache/modules/ant_regionais/DetailView.tpl', 58, false),)), $this); ?>
@@ -426,19 +426,36 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="row">
-<?php if (! $this->_tpl_vars['fields']['ant_secretaregionais_name']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_ANT_SECRETARIAS_ANT_REGIONAIS_FROM_ANT_SECRETARIAS_TITLE','module' => 'ant_regionais'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+<?php if (! $this->_tpl_vars['fields']['ant_pedido_regionais_name']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_ANT_PEDIDO_ANT_REGIONAIS_FROM_ANT_PEDIDO_TITLE','module' => 'ant_regionais'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 <?php endif; ?>
 </td>
-<td width='37.5%' colspan='3' >
-<?php if (! $this->_tpl_vars['fields']['ant_secretaregionais_name']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+<td width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['ant_pedido_regionais_name']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
 
 
-<?php if (! empty ( $this->_tpl_vars['fields']['ant_secretf930etarias_ida']['value'] )): ?><a href="index.php?module=ant_secretarias&action=DetailView&record=<?php echo $this->_tpl_vars['fields']['ant_secretf930etarias_ida']['value']; ?>
+<?php if (! empty ( $this->_tpl_vars['fields']['ant_pedido17ef_pedido_ida']['value'] )): ?><a href="index.php?module=ant_pedido&action=DetailView&record=<?php echo $this->_tpl_vars['fields']['ant_pedido17ef_pedido_ida']['value']; ?>
 "><?php endif; ?>
-<span id="ant_secretf930etarias_ida" class="sugar_field"><?php echo $this->_tpl_vars['fields']['ant_secretaregionais_name']['value']; ?>
+<span id="ant_pedido17ef_pedido_ida" class="sugar_field"><?php echo $this->_tpl_vars['fields']['ant_pedido_regionais_name']['value']; ?>
 </span>
-<?php if (! empty ( $this->_tpl_vars['fields']['ant_secretf930etarias_ida']['value'] )): ?></a><?php endif;  endif; ?>
+<?php if (! empty ( $this->_tpl_vars['fields']['ant_pedido17ef_pedido_ida']['value'] )): ?></a><?php endif;  endif; ?>
+</td>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+<td width='12.5%' scope="row">
+<?php if (! $this->_tpl_vars['fields']['ant_pedido_gionais_1_name']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_ANT_PEDIDO_ANT_REGIONAIS_1_FROM_ANT_PEDIDO_TITLE','module' => 'ant_regionais'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
+</td>
+<td width='37.5%'  >
+<?php if (! $this->_tpl_vars['fields']['ant_pedido_gionais_1_name']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<?php if (! empty ( $this->_tpl_vars['fields']['ant_pedido4dba_pedido_ida']['value'] )): ?><a href="index.php?module=ant_pedido&action=DetailView&record=<?php echo $this->_tpl_vars['fields']['ant_pedido4dba_pedido_ida']['value']; ?>
+"><?php endif; ?>
+<span id="ant_pedido4dba_pedido_ida" class="sugar_field"><?php echo $this->_tpl_vars['fields']['ant_pedido_gionais_1_name']['value']; ?>
+</span>
+<?php if (! empty ( $this->_tpl_vars['fields']['ant_pedido4dba_pedido_ida']['value'] )): ?></a><?php endif;  endif; ?>
 </td>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
