@@ -34,10 +34,10 @@ $sugar_config = array (
   'datef' => 'm/d/Y',
   'dbconfig' => 
   array (
-    'db_host_name' => 'localhost',
-    'db_user_name' => 'root',
+    'db_host_name' => 'mysql20.ambientelivre.com.br',
+    'db_user_name' => 'ambientelivre25',
     'db_password' => 'sejalivre',
-    'db_name' => 'homologacao_sugarcrm',
+    'db_name' => 'ambientelivre25',
     'db_type' => 'mysql',
   ),
   'dbconfigoption' => 

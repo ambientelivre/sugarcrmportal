@@ -20,7 +20,8 @@
             });            
         });
     </script>
-        
+       
+    <!--
     <style>
         .rel_log_info_od{
             background: #eee;
@@ -36,6 +37,7 @@
             width: 180px;
         }
     </style>
+    -->
     
     </head>
     
@@ -258,13 +260,9 @@
                     
                     <?php exit();  ?>
                     
-                <?php } else if($acao == 'REL_GERAL'){ ?>
-                
-                <?php
-//ecoPre($rel_geral)
-                ?>
-                
-                    <?php if(!empty($rel_geral)){ ?>
+                <?php } else if($acao == 'REL_GERAL'){ 
+                    
+                if(!empty($rel_geral)){ ?>
                         <ul id="cab_rel" style="margin-bottom: 50px;">
                             <?php $data = data_pt(date('l'), date('F')); ?>
 

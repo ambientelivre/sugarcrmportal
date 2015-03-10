@@ -1,192 +1,178 @@
-$(function(){
-    
+$(function(){    
     function montaTelaUpLoad(data){
+        if(data.status === 'vazio'){
+            var html = "";
+            html += "<div style='clear: both'></div>";
+            html += "<fieldset id='fieldset_form_pedido' class=''>";
+            html += "<legend style='width: 36%;'><p>Informações do Boleto</p></legend>";
+            html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
+            html += "<li class='dsp_li'>";
+            html += 'Código não possui boletos';
+            html += "</li>";
+            html += "<div id='n_pesquisa' onclick='reLoad()' class='n_pesquisa'>Nova Pesquisa</div>";
 
+            $('#result').html(html);
+        }else{
+            var html = "";
 
-
-          if(data.status === 'vazio'){
-
-              var html = "";
-
-                  html += "<div style='clear: both'></div>";
-                  html += "<fieldset id='fieldset_form_pedido' class=''>";
-                  html += "<legend style='width: 36%;'><p>Informações do Boleto</p></legend>";
-                  html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
-                  html += "<li class='dsp_li'>";
-                  html += 'Código não possui boletos';
-                  html += "</li>";
-                  html += "<div id='n_pesquisa' onclick='reLoad()' class='n_pesquisa'>Nova Pesquisa</div>";
-
-                  $('#result').html(html);
-
-              }else{
-
-                  var html = "";
-
-                  html += "<div style='clear: both'></div>";
-                  html += "<fieldset id='fieldset_form_pedido' class=''>";
-                  html += "<legend style='width: 35%;'><p>Informações do Boleto</p></legend>";
-                  html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
-                  html += "<li class='dsp_li_info' style='text-align: right'>Identificação do Boleto: &nbsp;</li>";
-                  html += "<li class='dsp_li'>";
-                  html += data[0].id_arquivo;
-                  html += "<input type='hidden' name='ped_codigo_boleto' value=" + data[0].id_arquivo +">";
-                  html += "</li>";
+            html += "<div style='clear: both'></div>";
+            html += "<fieldset id='fieldset_form_pedido' class=''>";
+            html += "<legend style='width: 35%;'><p>Informações do Boleto</p></legend>";
+            html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
+            html += "<li class='dsp_li_info' style='text-align: right'>Identificação do Boleto: &nbsp;</li>";
+            html += "<li class='dsp_li'>";
+            html += data[0].id_arquivo;
+            html += "<input type='hidden' name='ped_codigo_boleto' value=" + data[0].id_arquivo +">";
+            html += "</li>";
                   
-                  if(data[0].cat === 'P'){
-                      
-                    if(data[0].sec_origem !== ' '){
-
-                        html += "<li class='dsp_li_info' style='text-align: right'>Sec Origem: &nbsp;</li>";
-                        html += "<li class='dsp_li'>";
-                        html += data[0].nm_sec_origem;
-                        html += "<input type='hidden' name='ped_sec_origem' value=" + data[0].sec_origem + ">";
-                        html += "</li>";
-
-                    } else if(data[0].reg_origem !== ' '){
-
-                        html += "<li class='dsp_li_info' style='text-align: right'>Reg Origem: &nbsp;</li>";
-                        html += "<li class='dsp_li'>";
-                        html += data[0].nm_reg_origem;
-                        html += "<input type='hidden' name='ped_reg_origem' value=" + data[0].reg_origem + ">";
-                        html += "</li>";
-
-                    }
-                    
-                    if(data[0].reg_destino !== ' '){
-
-                        html += "<li class='dsp_li_info' style='text-align: right'>Regional Destino: &nbsp;</li>";
-                        html += "<li class='dsp_li'>";
-                        html += data[0].reg_destino;
-                        html += "<input type='hidden' name='ped_reg_destino' value=" + data[0].reg_destino + ">";
-                        html += "</li>";
-
-                    }else if(data[0].id_cliente !== ' '){
-
-                        html += "<li class='dsp_li_info' style='text-align: right'>Cliente Destino: &nbsp;</li>";
-                        html += "<li class='dsp_li'>";
-                        html += data[0].nm_cliente;
-                        html += "<input type='hidden' name='ped_nm_razao' value=" + data[0].id_cliente + ">";
-                        html += "</li>";
-
-                    }else{
-                        html += "<li class='dsp_li_info' style='text-align: right'>Cliente Destino: &nbsp;</li>";
-                        html += "<li class='dsp_li'>";
-                        html += data[0].nm_sec_destino;
-                        html += "<input type='hidden' name='ped_nm_razao' value=" + data[0].sec_destino + ">";
-                        html += "</li>";
-                    }
-
-                  }else if(data[0].cat === 'I'){
-                    if(data[0].secretaria !== ' '){
-                        html += "<li class='dsp_li_info' style='text-align: right'>Sec Origem: &nbsp;</li>";
-                        html += "<li class='dsp_li'>";
-                        html += data[0].secretaria;
-                        html += "<input type='hidden' name='ped_sec_origem' value=" + data[0].sec_origem + ">";
-                        html += "</li>";
-
-                    } else if(data[0].regional !== ' '){
-                        html += "<li class='dsp_li_info' style='text-align: right'>Reg Origem: &nbsp;</li>";
-                        html += "<li class='dsp_li'>";
-                        html += data[0].regional;
-                        html += "<input type='hidden' name='ped_reg_origem' value=" + data[0].reg_origem + ">";
-                        html += "</li>";
-
-                    }
-                  }
-
-              html += "</ul>";
-              html += "</fieldset>";
-
-//                    html += data[1].lista_lote;
-
-              html += "<fieldset id='fieldset_form_pedido' class=''>";
-              html += "<legend><p>Pedido</p></legend>";
-
-              html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
-              
             if(data[0].cat === 'P'){
-              
-              html += "<li class='dsp_li' style='text-align: center; width: 15%;'>QNT</li>";
-              html += "<li class='dsp_li' style='text-align: center; width: 64.4%; border-right: 2px #f1f1f1 solid; border-left: 2px #f1f1f1 solid; '>PRODUTO</li>";
-              html += "<li class='dsp_li' style='text-align: center; width: 20%;'>LOTE</li>";
+                if(data[0].sec_origem !== ' '){
 
-            }else if(data[0].cat === 'I'){
-              
-              html += "<li class='dsp_li' style='text-align: center; width: 6%;'>Qnt</li>";
-              html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid;'>Nome</li>";
-              html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid; '>Motivo</li>";
-              html += "<li class='dsp_li' style='text-align: center; width: 15%; border-left: 2px #f1f1f1 solid;'>Lote</li>";
-              html += "<li class='dsp_li' style='text-align: center; width: 18%; border-left: 2px #f1f1f1 solid;'>Reg</li>";
-              html += "<li class='dsp_li' style='text-align: center; width: 17%; border-left: 2px #f1f1f1 solid;'>Sec</li>";
-  
+                    html += "<li class='dsp_li_info' style='text-align: right'>Sec Origem: &nbsp;</li>";
+                    html += "<li class='dsp_li'>";
+                    html += data[0].nm_sec_origem;
+                    html += "<input type='hidden' name='ped_sec_origem' value=" + data[0].sec_origem + ">";
+                    html += "</li>";
+
+                } else if(data[0].reg_origem !== ' '){
+
+                    html += "<li class='dsp_li_info' style='text-align: right'>Reg Origem: &nbsp;</li>";
+                    html += "<li class='dsp_li'>";
+                    html += data[0].nm_reg_origem;
+                    html += "<input type='hidden' name='ped_reg_origem' value=" + data[0].reg_origem + ">";
+                    html += "</li>";
+
+                }
+
+                if(data[0].reg_destino !== ' '){
+
+                    html += "<li class='dsp_li_info' style='text-align: right'>Regional Destino: &nbsp;</li>";
+                    html += "<li class='dsp_li'>";
+                    html += data[0].reg_destino;
+                    html += "<input type='hidden' name='ped_reg_destino' value=" + data[0].reg_destino + ">";
+                    html += "</li>";
+
+                }else if(data[0].id_cliente !== ' '){
+
+                    html += "<li class='dsp_li_info' style='text-align: right'>Cliente Destino: &nbsp;</li>";
+                    html += "<li class='dsp_li'>";
+                    html += data[0].nm_cliente;
+                    html += "<input type='hidden' name='ped_nm_razao' value=" + data[0].id_cliente + ">";
+                    html += "</li>";
+
+                }else{
+                    html += "<li class='dsp_li_info' style='text-align: right'>Cliente Destino: &nbsp;</li>";
+                    html += "<li class='dsp_li'>";
+                    html += data[0].nm_sec_destino;
+                    html += "<input type='hidden' name='ped_nm_razao' value=" + data[0].sec_destino + ">";
+                    html += "</li>";
+                }
+
+              }else if(data[0].cat === 'I'){
+                if(data[0].secretaria !== ' '){
+                    html += "<li class='dsp_li_info' style='text-align: right'>Sec Origem: &nbsp;</li>";
+                    html += "<li class='dsp_li'>";
+                    html += data[0].secretaria;
+                    html += "<input type='hidden' name='ped_sec_origem' value=" + data[0].sec_origem + ">";
+                    html += "</li>";
+
+                } else if(data[0].regional !== ' '){
+                    html += "<li class='dsp_li_info' style='text-align: right'>Reg Origem: &nbsp;</li>";
+                    html += "<li class='dsp_li'>";
+                    html += data[0].regional;
+                    html += "<input type='hidden' name='ped_reg_origem' value=" + data[0].reg_origem + ">";
+                    html += "</li>";
+
+                }
+            }
+
+            html += "</ul>";
+            html += "</fieldset>";
+
+            // html += data[1].lista_lote;
+
+            html += "<fieldset id='fieldset_form_pedido' class=''>";
+            html += "<legend><p>Pedido</p></legend>";
+
+            html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
+
+            if(data[0].cat === 'P'){
+
+                html += "<li class='dsp_li' style='text-align: center; width: 15%;'>QNT</li>";
+                html += "<li class='dsp_li' style='text-align: center; width: 64.4%; border-right: 2px #f1f1f1 solid; border-left: 2px #f1f1f1 solid; '>PRODUTO</li>";
+                html += "<li class='dsp_li' style='text-align: center; width: 20%;'>LOTE</li>";
+
+            } else if(data[0].cat === 'I'){
+
+                html += "<li class='dsp_li' style='text-align: center; width: 6%;'>Qnt</li>";
+                html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid;'>Nome</li>";
+                html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid; '>Motivo</li>";
+                html += "<li class='dsp_li' style='text-align: center; width: 15%; border-left: 2px #f1f1f1 solid;'>Lote</li>";
+                html += "<li class='dsp_li' style='text-align: center; width: 18%; border-left: 2px #f1f1f1 solid;'>Reg</li>";
+                html += "<li class='dsp_li' style='text-align: center; width: 17%; border-left: 2px #f1f1f1 solid;'>Sec</li>";
+
             }
             
-              html += "</ul>";
-              html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
+            html += "</ul>";
+            html += "<ul class='dsp_ul' style='font: normal 20px/15px  verdana, arial; padding: 0;'>";
 
+            if(data[0].cat === 'P'){
+
+                for($i=1; $i < data.length; $i++){
+
+                    html += "<li class='dsp_li' style='text-align: center; width: 15%; height: 70px'>" + data[$i].quantidade + "</li>";
+                    html += "<input type='hidden' name='ped_quantidade[]' value='" + data[$i].quantidade + "'>";
+                    html += "<li class='dsp_li' style='text-align: center; width: 64.4%; border-right: 2px #f1f1f1 solid; height: 70px; border-left: 2px #f1f1f1 solid; '>" + data[$i].pd_nome + "</li>";
+                    html += "<li class='dsp_li' style='text-align: center; width: 20%; height: 70px'>" + data[$i].lista_lote +"</li>";
+                    html += "<input type='hidden' name='ped_codigo_boleto' value='" + data[$i].cod_boleto + "'>";
+                    html += "<input type='hidden' name='ped_produto[]' value='" + data[$i].pd_id + "'>";
+                    html += "<input type='hidden' name='ped_lote[]' value='" + data[$i].lista_lote +"'>";
+                }      
+
+            }else if(data[0].cat === 'I'){
+
+                for($i=0; $i < data.length; $i++){
+                    html += "<li class='dsp_li' style='text-align: center; width: 6%; height: 70px'>" + data[$i].quantidade + "</li>";
+                    html += "<input type='hidden' name='ped_quantidade[]' value='" + data[$i].pd_nome + "'>";
+                    html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid; height: 70px; border-left: 2px #f1f1f1 solid; '>" + data[$i].pd_nome + "</li>";
+                    html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].motivo +"</li>";
+                    html += "<li class='dsp_li' style='text-align: center; width: 15%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].lote +"</li>";
+                    html += "<li class='dsp_li' style='text-align: center; width: 18%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].regional +"</li>";
+                    html += "<li class='dsp_li' style='text-align: center; width: 17%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].secretaria +"</li>";
+                    html += "<input type='hidden' name='ped_codigo_boleto' value='" + data[$i].cod_boleto + "'>";
+                    html += "<input type='hidden' name='ped_produto[]' value='" + data[$i].pd_id + "'>";
+                    html += "<input type='hidden' name='ped_lote[]' value='" + data[$i].lista_lote +"'>";                        
+                }
+
+            }
               
-                  
-                  if(data[0].cat === 'P'){
-
-                    for($i=1; $i < data.length; $i++){
-                        
-                        html += "<li class='dsp_li' style='text-align: center; width: 15%; height: 70px'>" + data[$i].quantidade + "</li>";
-                        html += "<input type='hidden' name='ped_quantidade[]' value='" + data[$i].quantidade + "'>";
-                        html += "<li class='dsp_li' style='text-align: center; width: 64.4%; border-right: 2px #f1f1f1 solid; height: 70px; border-left: 2px #f1f1f1 solid; '>" + data[$i].pd_nome + "</li>";
-                        html += "<li class='dsp_li' style='text-align: center; width: 20%; height: 70px'>" + data[$i].lista_lote +"</li>";
-                        html += "<input type='hidden' name='ped_codigo_boleto' value='" + data[$i].cod_boleto + "'>";
-                        html += "<input type='hidden' name='ped_produto[]' value='" + data[$i].pd_id + "'>";
-                        html += "<input type='hidden' name='ped_lote[]' value='" + data[$i].lista_lote +"'>";
-                    }      
-
-                  }else if(data[0].cat === 'I'){
-
-                    for($i=0; $i < data.length; $i++){
-                        html += "<li class='dsp_li' style='text-align: center; width: 6%; height: 70px'>" + data[$i].quantidade + "</li>";
-                        html += "<input type='hidden' name='ped_quantidade[]' value='" + data[$i].pd_nome + "'>";
-                        html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid; height: 70px; border-left: 2px #f1f1f1 solid; '>" + data[$i].pd_nome + "</li>";
-                        html += "<li class='dsp_li' style='text-align: center; width: 22%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].motivo +"</li>";
-                        html += "<li class='dsp_li' style='text-align: center; width: 15%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].lote +"</li>";
-                        html += "<li class='dsp_li' style='text-align: center; width: 18%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].regional +"</li>";
-                        html += "<li class='dsp_li' style='text-align: center; width: 17%; border-left: 2px #f1f1f1 solid; height: 70px'>" + data[$i].secretaria +"</li>";
-                        html += "<input type='hidden' name='ped_codigo_boleto' value='" + data[$i].cod_boleto + "'>";
-                        html += "<input type='hidden' name='ped_produto[]' value='" + data[$i].pd_id + "'>";
-                        html += "<input type='hidden' name='ped_lote[]' value='" + data[$i].lista_lote +"'>";                        
-                    }
-
-                  }
-              
-              html += "</ul>";
-
-              html += "</fieldset>";
-
-              html += "<div id='h_valor_total' style='float: left; width: 100%; color: #008B5A; border-bottom: 2px #f1f1f1 solid; '>";
-    //     
-    //<!--            <h3 style="float: left"></h3>-->
-    //
+            html += "</ul>";
+            html += "</fieldset>";
+            html += "<div id='h_valor_total' style='float: left; width: 100%; color: #008B5A; border-bottom: 2px #f1f1f1 solid; '>";
+            //     
+            //<!--<h3 style="float: left"></h3>-->
+            //
             if(data[0].cat === 'P'){
               html += "<h3 style='font: normal 24px verdana, arial;'> Valor Total:&nbsp; R$&nbsp;<span id='ped_valor_total_txt'>" + data[0].valor_total + "</span></h3>";
               html += "<input name='ped_valor_total' id='id_ped_valor_total' type='hidden' value='" + data[0].valor_total + "'>";                
             }
 
-              html += "</div>";
-              html += "<input type='file' name='arquivo' id='arquivo'>";
-              
-              html += "<div>";
-              html += "<input type='submit' value='Enviar Arquivo' name='submit'>";
-              html += "</div>";
-              
+            html += "</div>";
+            html += "<input type='file' name='arquivo' id='arquivo'>";
 
-              $('#result').html(html);
-              }
+            html += "<div>";
+            html += "<input type='submit' value='Enviar Arquivo' name='submit'>";
+            html += "</div>";
 
-//        return;
+            $('#result').html(html);
+        }
+
+    // return;
 
     }
     
     $('#enviar_contato').click(function(){
-                   $('#chronoform-contatos').submit();
+        $('#chronoform-contatos').submit();
     });
 
     $('#arquivo').click(function (){
@@ -199,19 +185,14 @@ $(function(){
         if(cod_file !== ''){
             $('#bt_azul').fadeIn();
         }
-
     });
 
     $('#cod_file').blur(function(){
-
         var cat = $('.cat').val();
-
         if(cat !== ''){
             $('#bt_azul').fadeIn();
         }
-
     });
-
 
     function getRadialVal(classe){
         var rcat = '.' + classe;
@@ -240,26 +221,25 @@ $(function(){
 
       if(cod_file !== ''){
 
-          $.ajax({
-              url: geraUrlUploadFile('cat','cod_file'),
-              dataType : "json",
-              success: function(data) {
-                  montaTelaUpLoad(data);
-              },
+        $.ajax({
+            url: geraUrlUploadFile('cat','cod_file'),
+            dataType : "json",
+            success: function(data) {
+                montaTelaUpLoad(data);
+            },
 
-              beforeSend: function(){
-                $('.loader').css({display:"block"});
-                $('.esconder').hide();
+            beforeSend: function(){
+              $('.loader').css({display:"block"});
+              $('.esconder').hide();
 
-              },
+            },
 
-              complete: function(){
-                $('.loader').css({display:"none"});
+            complete: function(){
+              $('.loader').css({display:"none"});
 
-              }
-          });
+            }
+        });
       }else{
-
           $('#cod_file').val('Campo necessário');
       }
 
@@ -380,6 +360,10 @@ $(function(){
         $('#form-row-50').hide();
         $('#form-row-51').hide();
 
+    // Regra de negocios da pagina PEDIDO
+    
+    
+    
 
     // VALIDANDO CAMPOS
 
@@ -390,10 +374,8 @@ $(function(){
     });
     
     
-    // REGATAR O VALOR TOTAL
-    
-    
-    
+    // RESGATAR O VALOR TOTAL
+        
     // FORMA PARA VÁRIOS CAMPOS DE PEDIDOS SIMULTANEOS //
     function somenteNumeros(){
         $('.quantidade').unbind('keyup');

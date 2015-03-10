@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
-	public $user = 'root';
+	public $host = 'mysql20.ambientelivre.com.br';
+	public $user = 'ambientelivre25';
 	public $password = 'sejalivre';
-	public $db = 'portal_homologacao';
+	public $db = 'ambientelivre25';
 	public $dbprefix = 'jtec_';
 	public $live_site = '';
 	public $secret = 'zGmZOCvXJguynoJ7';
