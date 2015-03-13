@@ -121,7 +121,7 @@
     
     <div class="gcore-input gcore-display-table" id="fin-fld1">
 
-        <select name ="ped_sec_origem" data-placeholder="Escolha uma secretaria..." class="chosen-select" style="width:350px;" tabindex="4">
+        <select name ="ped_sec_origem" data-placeholder="Escolha uma secretaria..." class="chosen-select"  tabindex="4">
 
             <option value="">-- Selecione</option>
 
@@ -140,7 +140,7 @@
     <label for="fld3" class="control-label gcore-label-left">Regional Origem</label>
     <div class="gcore-input gcore-display-table" id="fin-fld3">
 
-        <select name ="ped_reg_origem" data-placeholder="Escolha uma regional" class="chosen-select" style="width:350px;" tabindex="4">
+        <select name ="ped_reg_origem" data-placeholder="Escolha uma regional" class="chosen-select"  tabindex="4">
            <option value="">-- Selecione</option>
 
            <?php
@@ -159,7 +159,7 @@
     
     <div class="gcore-input gcore-display-table" id="fin-fld1">
 
-        <select name ="ped_sec_destino" data-placeholder="Escolha uma secretaria..." class="chosen-select" style="width:350px;" tabindex="4">
+        <select name ="ped_sec_destino" data-placeholder="Escolha uma secretaria..." class="chosen-select"  tabindex="4">
 
             <option value="">-- Selecione</option>
 
@@ -178,7 +178,7 @@
     <label for="fld3" class="control-label gcore-label-left">Regional Destino</label>
     <div class="gcore-input gcore-display-table" id="fin-fld3">
 
-        <select name ="ped_reg_destino" data-placeholder="Escolha uma regional" class="chosen-select" style="width:350px;" tabindex="4">
+        <select name ="ped_reg_destino" data-placeholder="Escolha uma regional" class="chosen-select"  tabindex="4">
            <option value="">-- Selecione</option>
 
            <?php
@@ -196,7 +196,7 @@
     <label for="fld3" class="control-label gcore-label-left">Cliente Destino</label>
     <div class="gcore-input gcore-display-table" id="fin-fld3">
 
-        <select name ="ped_clie_destino" data-placeholder="Escolha um cliente" class="chosen-select" style="width:350px;" tabindex="4">
+        <select name ="ped_clie_destino" data-placeholder="Escolha um cliente" class="chosen-select"  tabindex="4">
            <option value="">-- Selecione</option>
 
            <?php

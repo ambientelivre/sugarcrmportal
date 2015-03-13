@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/reveal/reveal.css">    
         <link rel="stylesheet" type="text/css" href="<?php echo LIB_PATH; ?>/css/style.css">
         <!-- Reveal Modal Plugin só funciona com jquery 1.6... -->
-        <script type="text/javascript" src="<?php echo LIB_PATH; ?>/js/jquery-1.6.min.js"></script>
+        <script type="text/javascript" src="<?php echo LIB_PATH; ?>/js/jquery_legacy_1.6.min.js"></script>
         <script src="<?php echo LIB_PATH; ?>/reveal/jquery.reveal.js"></script>
     
     <script type="text/javascript">    
