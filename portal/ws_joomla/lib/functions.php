@@ -1,5 +1,8 @@
 <?php
 ini_set('mssql.charset', 'UTF-8');
+
+
+
 function executarQuery($sql){
    
     $result = mysql_query($sql);
@@ -230,4 +233,82 @@ function inserirDados($sql){
         return;
     }
 
+    function checkProfile($prefix, $usuario_id, $profile) {
+        $sql = "SELECT * FROM ".$prefix."user_profiles 
+                    WHERE user_id=" . $usuario_id . "
+                    AND profile_key = 'profile.".$profile."'";
+        //echo $sql."<br>";
+        
+        $result = mysql_query($sql);
+
+        if($us = mysql_fetch_array($result)){
+            $profile['id'] = $us['user_id'];
+            $profile['key'] = $us['profile_key']; 
+            $profile['value'] = $us['profile_value']; 
+            return $profile;            
+        } else {
+            return array();
+        }        
+    }
+    
+    // Funções para pegar entidades de acordo com o usuário logado
+    /***** Funções para pegar entidades de acordo com o usuário logado */
+    /*
+    function getSecretariasByUser($prefix, $usuario_id) {     
+        $sql = "SELECT sec.id,"
+            ." sec.sec_razao_social"
+            ." FROM ant_secretarias as sec, ".$prefix."usergroups, ".$prefix."user_usergroup_map"
+            ." WHERE ".$prefix."user_usergroup_map.user_id = ".$usuario_id
+            ." AND sec.deleted = 0"
+            ." AND sec.name = ".$prefix."usergroups.title"
+            ." AND ".$prefix."user_usergroup_map.group_id = ".$prefix."usergroups.id"
+            ;
+
+        $result = mysql_query($sql);
+
+        $i = 0;
+        while($sec = mysql_fetch_array($result)){
+            $secretaria[0] = $sec['id'];
+            $secretaria[1] = $sec['sec_razao_social'];
+            $secretarias[$i] = $secretaria;
+            $i++;
+        }
+    }
+    
+    function getRegionaisByUser($secretaria_id) {   
+        $sql = "SELECT reg.id,"
+            ."reg.name"
+            ." FROM ant_regionais as reg, ant_secretarias as sec, ant_regiona_secretarias_c as reg_sec"
+            ." WHERE reg.name IS NOT NULL"
+            ." AND sec.id = ".$secretaria_id;
+            ." AND reg_sec.deleted = 0"
+            ." AND reg.reg_sec_id = reg_sec.ant_region1213etarias_ida"
+            ." AND reg.id = reg_sec.ant_regioneb7fgionais_idb"			
+            ;		
+    
+        $i = 0;
+        while($reg = mysql_fetch_array($retorno)){                
+            $regional[0] = $reg['id'];
+            $regional[1] = $reg['name'];
+
+            if ($regional[1] != null) {
+                $regionais[$i] = $regional;
+                $i++;
+            }
+        }              
+    }
+    
+    function getClientesByUser($regional_id) {  
+        $sql = "SELECT cli.id,"
+            ." cli.name"
+            ." FROM ant_clientes as cli, ant_regionais as sec, ant_clientent_regionais_c as reg_cli"
+            ." WHERE cli.name IS NOT NULL"
+            ." AND reg.id = ".$regional_id;
+            ." AND cli.deleted = 0"
+            ." AND cli.reg_sec_id = reg_sec.ant_region1213etarias_ida"
+            ." AND reg.id = reg_sec.ant_regioneb7fgionais_idb"			
+            ;
+    }
+    */
+    
 ?>

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-03-13 08:04:11
+// created: 2015-03-17 13:23:41
 $GLOBALS["dictionary"]["Currency"] = array (
   'table' => 'currencies',
   'comment' => 'Currencies allow Sugar to store and display monetary values in various denominations',
