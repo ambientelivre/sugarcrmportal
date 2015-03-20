@@ -251,6 +251,82 @@ function inserirDados($sql){
         }        
     }
     
+    /***** Evita ter que replicar opções de formulário em várias páginas php */  
+    function populateTipoLogradouroList() {
+        $tipoLogradouroArray = array(
+            array("", "Selecione um logradouro"),
+            array("Rua", "Rua"),
+            array("Avenida", "Avenida"),
+            array("Rodovia", "Rodovia"),
+            array("Travessa", "Travessa"),
+            array("Praça", "Praça"),
+            array("Quadra", "Quadra"),
+            array("Alameda", "Alameda"),
+            array("Beco", "Beco"),
+            array("Vila", "Vila"),
+            array("Estrada", "Estrada"),
+            array("Passagem", "Passagem"),
+            array("Viela", "Viela"),
+            array("Servidão", "Servidão")            
+        );
+        
+        for ($i = 0; $i < count($tipoLogradouroArray); $i++) {
+           echo "<option value=".$tipoLogradouroArray[$i][0].">".$tipoLogradouroArray[$i][1]."</option>";           
+       } 
+    }
+    
+    function populateEstadoList() {        
+       $estadoArray = array(
+           array("", "Selecione um estado"  ),
+           array("AC", "AC"),
+           array("AL", "AL"),
+           array("AM", "AM"),
+           array("AP", "AP"),
+           array("BA", "BA"),
+           array("CE", "CE"),
+           array("DF", "DF"),
+           array("ES", "ES"),
+           array("GO", "GO"),
+           array("MA", "MA"),
+           array("MG", "MG"),
+           array("MS", "MS"),
+           array("MT", "MT"),
+           array("PA", "PA"),
+           array("PB", "PB"),
+           array("PE", "PE"),
+           array("PI", "PI"),
+           array("PR", "PR"),
+           array("RJ", "RJ"),
+           array("RN", "RN"),
+           array("RO", "RO"),
+           array("RR", "RR"),
+           array("RS", "RS"),
+           array("SC", "SC"),
+           array("SE", "SE"),
+           array("SP", "SP"),
+           array("TO", "TO")                   
+           );
+        
+       for ($i = 0; $i < count($estadoArray); $i++) {
+           echo "<option value=".$estadoArray[$i][0].">".$estadoArray[$i][1]."</option>";           
+       } 
+    }
+    
+    function populateMotivoProdutoInutilizado() {
+        $prodInutArray = array(
+            array("", "Selecione um motivo"  ),
+            array("Data de validade vencida", "Data de validade vencida"  ),
+            array("Quebra de frasco", "Quebra de frasco"  ),
+            array("Outros - vide observação", "Outros - vide observação"  )
+        );
+        
+        for ($i = 0; $i < count($prodInutArray); $i++) {
+           echo "<option value=".$prodInutArray[$i][0].">".$prodInutArray[$i][1]."</option>";           
+        } 
+    }
+    
+    /***** FIM POPULATES*/
+    
     // Funções para pegar entidades de acordo com o usuário logado
     /***** Funções para pegar entidades de acordo com o usuário logado */
     /*

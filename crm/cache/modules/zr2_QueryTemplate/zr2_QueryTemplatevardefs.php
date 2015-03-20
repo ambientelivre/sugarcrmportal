@@ -1,5 +1,5 @@
 <?php
-// created: 2015-03-11 10:16:24
+// created: 2015-03-19 15:35:29
 $GLOBALS["dictionary"]["zr2_QueryTemplate"] = array (
   'table' => 'zr2_querytemplate',
   'fields' => 

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-03-02 13:09:58
+// created: 2015-03-18 16:58:18
 $GLOBALS["dictionary"]["ant_log_estoque"] = array (
   'table' => 'ant_log_estoque',
   'audited' => true,
