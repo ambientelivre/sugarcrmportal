@@ -23,6 +23,17 @@ class Conexao{
         
         $_con = mysql_connect($this->_host, $this->_user, $this->_pass) or die("Não conectou ao banco.</br>".  mysql_error());
         $_con = mysql_select_db($this->_data_base) or die('Nao foi possivel selecionar o banco de dados'.mysql_error());
+        
+        /*
+        Força codificação UTF-8 para dados do banco
+        A princípio não seria necessário,
+        mas no msg.php codificação iso-8859-1 bagunça os acentos em html,
+        e codificação utf-8 bagunça os acentos dos dados mysql
+        */
+        mysql_query("SET NAMES 'utf8'");
+        mysql_query('SET character_set_connection=utf8');
+        mysql_query('SET character_set_client=utf8');
+        mysql_query('SET character_set_results=utf8');
         return $_con;
     }
 }

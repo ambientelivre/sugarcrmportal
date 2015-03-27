@@ -22,6 +22,7 @@
         private $ped_status;
         private $ped_sec_origem;
         private $ped_reg_origem;
+        private $ped_sec_destino;
         private $ped_reg_destino;
         private $ped_clie_destino;
         private $ped_codigo_boleto;
@@ -49,6 +50,7 @@
             $ped_status,
             $ped_sec_origem,
             $ped_reg_origem,
+            $ped_sec_destino,    
             $ped_reg_destino,
             $ped_clie_destino,
             $ped_codigo_boleto){
@@ -74,6 +76,7 @@
                 $this->ped_status = $ped_status;
                 $this->ped_sec_origem = $ped_sec_origem;
                 $this->ped_reg_origem = $ped_reg_origem;
+                $this->ped_sec_destino = $ped_sec_destino;
                 $this->ped_reg_destino = $ped_reg_destino;
                 $this->ped_clie_destino = $ped_clie_destino;
                 $this->ped_codigo_boleto = $ped_codigo_boleto;
@@ -169,6 +172,10 @@
             return $this->ped_reg_origem;
         }
 
+        public function getPed_sec_destino(){
+            return $this->ped_sec_destino;
+        }
+        
         public function getPed_reg_destino(){
             return $this->ped_reg_destino;
         }

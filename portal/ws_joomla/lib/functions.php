@@ -21,26 +21,6 @@ function executarQuery($sql){
     }   
 }
 
-function inserirDados($sql){
-        
- 
-    $result = mysql_query($sql);
-            
-    if(!$result){
-        
-        $mensagem  = 'Inserção inválida: ' . mysql_error() . "\n\n";
-        $mensagem .= 'Seu código: ' . $sql;
-        
-        throw new Exception($mensagem);
-        
-        return; 
-        
-    }else{
-        return $result;
-    }   
-}
-
-
 //FUNÇÃO QUE REALIZA A PESQUISA NO ESTOQUE
     function consultarEstoque($sql){
         
@@ -146,24 +126,15 @@ function inserirDados($sql){
         return $data;
     }
     
-    function converte_data($data){
-        
-        // TROCA A BARRA INVERTIDA POR TRAÇO
-        $data = str_replace('/', '-', $data);
-        
-        // INVERTE DATA PARA EVITAR PROBLEMAS EM CONSULTAS SQL
-        $data = date("Y-m-d", strtotime($data));        
-        
+    function converte_data($data){        
+        // CONVERTER UMA DATA EM FORMATO BRASILEIRO PARA INSERIR NO MYSQL
+        $data = implode("-",array_reverse(explode("/",$data)));
         return $data;
     }
     
     function converte_data_BR($data){
-        // TROCA A BARRA INVERTIDA POR TRAÇO
-        $data = str_replace('-', '/', $data);
-        
-        // INVERTE DATA PARA EVITAR PROBLEMAS EM CONSULTAS SQL
-        $data = date("d/m/Y", strtotime($data));        
-        
+        // CONVERTE DATA VINDA DO MYSQL PARA O FORMATO PT-BR      
+        $data = implode("/",array_reverse(explode("-",$data)));
         return $data;
     }
     
@@ -321,70 +292,24 @@ function inserirDados($sql){
         );
         
         for ($i = 0; $i < count($prodInutArray); $i++) {
-           echo "<option value=".$prodInutArray[$i][0].">".$prodInutArray[$i][1]."</option>";           
+           echo '<option value="'.$prodInutArray[$i][0].'">'.$prodInutArray[$i][1].'</option>';           
         } 
     }
     
-    /***** FIM POPULATES*/
-    
-    // Funções para pegar entidades de acordo com o usuário logado
-    /***** Funções para pegar entidades de acordo com o usuário logado */
-    /*
-    function getSecretariasByUser($prefix, $usuario_id) {     
-        $sql = "SELECT sec.id,"
-            ." sec.sec_razao_social"
-            ." FROM ant_secretarias as sec, ".$prefix."usergroups, ".$prefix."user_usergroup_map"
-            ." WHERE ".$prefix."user_usergroup_map.user_id = ".$usuario_id
-            ." AND sec.deleted = 0"
-            ." AND sec.name = ".$prefix."usergroups.title"
-            ." AND ".$prefix."user_usergroup_map.group_id = ".$prefix."usergroups.id"
-            ;
-
-        $result = mysql_query($sql);
-
-        $i = 0;
-        while($sec = mysql_fetch_array($result)){
-            $secretaria[0] = $sec['id'];
-            $secretaria[1] = $sec['sec_razao_social'];
-            $secretarias[$i] = $secretaria;
-            $i++;
-        }
+    function populateOptionSelect($class, $keyword, $object_array) { 
+        $abreviated = substr($class, 0, 3);
+        $label = ucfirst($class);
+        
+        $content = "";
+        $content.= '<label for="select_'.$class.'">'.$label.'</label>';        
+        $content.= '<select class="chosen-select select_'.$class.'_'.$keyword.'" name="'.$abreviated.'_'.$keyword.'" >';
+        $content.= '<option value="">Selecione '.$class.'</option>';            
+        foreach ($object_array as $object){
+            $content.= '<option value="'.$object[$abreviated.'_id'].'">'.$object[$abreviated.'_name'].'</option>';  
+        }    
+        $content.= '</select>';
+        echo $content;   
     }
     
-    function getRegionaisByUser($secretaria_id) {   
-        $sql = "SELECT reg.id,"
-            ."reg.name"
-            ." FROM ant_regionais as reg, ant_secretarias as sec, ant_regiona_secretarias_c as reg_sec"
-            ." WHERE reg.name IS NOT NULL"
-            ." AND sec.id = ".$secretaria_id;
-            ." AND reg_sec.deleted = 0"
-            ." AND reg.reg_sec_id = reg_sec.ant_region1213etarias_ida"
-            ." AND reg.id = reg_sec.ant_regioneb7fgionais_idb"			
-            ;		
-    
-        $i = 0;
-        while($reg = mysql_fetch_array($retorno)){                
-            $regional[0] = $reg['id'];
-            $regional[1] = $reg['name'];
-
-            if ($regional[1] != null) {
-                $regionais[$i] = $regional;
-                $i++;
-            }
-        }              
-    }
-    
-    function getClientesByUser($regional_id) {  
-        $sql = "SELECT cli.id,"
-            ." cli.name"
-            ." FROM ant_clientes as cli, ant_regionais as sec, ant_clientent_regionais_c as reg_cli"
-            ." WHERE cli.name IS NOT NULL"
-            ." AND reg.id = ".$regional_id;
-            ." AND cli.deleted = 0"
-            ." AND cli.reg_sec_id = reg_sec.ant_region1213etarias_ida"
-            ." AND reg.id = reg_sec.ant_regioneb7fgionais_idb"			
-            ;
-    }
-    */
-    
+    /***** FIM POPULATES*/    
 ?>

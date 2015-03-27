@@ -1,5 +1,5 @@
 <?php
-// created: 2015-03-20 08:00:15
+// created: 2015-03-26 08:22:11
 $GLOBALS["dictionary"]["SugarFeed"] = array (
   'table' => 'sugarfeed',
   'audited' => false,

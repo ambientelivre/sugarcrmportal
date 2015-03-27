@@ -16,6 +16,9 @@ $NOME_PROJETO = 'ws_joomla';
 
 
 //DEFINIÇÃO DE CONSTANTES DO PROJETO
+// Model
+define("MODEL_PATH", $SERVER_URL . $NOME_PROJETO . '/model');
+
 // Controller
 define("CONTROL_PATH", $SERVER_URL . $NOME_PROJETO . '/ctrl');
 
