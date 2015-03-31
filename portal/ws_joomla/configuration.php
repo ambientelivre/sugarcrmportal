@@ -32,7 +32,7 @@ define("LIB_PATH", $SERVER_URL . $NOME_PROJETO . '/lib');
 define("INCLUDE_PATH", $SERVER_URL . $NOME_PROJETO . '/lib/includes');
 
 // BoletoPhp
-define("BOLETOPHP_PATH", $SERVER_URL . $NOME_PROJETO .  '/lib/boleto_php/');
+define("BOLETOPHP_PATH", $SERVER_URL . $NOME_PROJETO .  '/lib/boleto_php');
 
 // Caminho do projeto + nome do projeto
 define("PROJECT_PATH", $SERVER_URL . $NOME_PROJETO);
@@ -44,3 +44,13 @@ define("PROJECT_URL", $SERVER_URL);
 define("JS_PATH", $SERVER_URL . $NOME_PROJETO . '/lib/js');
 define("CSS_PATH", $SERVER_URL . $NOME_PROJETO . '/lib/css');
 define("IMAGE_PATH", $SERVER_URL . $NOME_PROJETO . '/lib/imagens');
+
+// Boleto
+define("IDCONV", "0951538");
+define("URL_RETORNO", "http://teste.com.br");
+define("URL_INFORMA", "http://teste.com.br");
+define("MSG_LOJA", "Simulação teste boleto");
+define("DATAVENCIMENTO", "7");
+define("TPPAGAMENTO", "2");
+
+

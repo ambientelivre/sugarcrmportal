@@ -130,11 +130,11 @@
                         
                     </table>
 
-                    <div class="atender" id="bt_default">
+                    <div class="atender bt_default">
                         <p>Atender</p>
                     </div>
 
-                    <div class="voltar" id="bt_default">
+                    <div class="voltar bt_default">
                         <p>Voltar</p>
                     </div>
                     

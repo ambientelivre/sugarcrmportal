@@ -223,7 +223,7 @@ function executarQuery($sql){
     }
     
     /***** Evita ter que replicar opções de formulário em várias páginas php */  
-    function populateTipoLogradouroList() {
+    function populateTipoLogradouroList($selected = "") {
         $tipoLogradouroArray = array(
             array("", "Selecione um logradouro"),
             array("Rua", "Rua"),
@@ -242,11 +242,15 @@ function executarQuery($sql){
         );
         
         for ($i = 0; $i < count($tipoLogradouroArray); $i++) {
-           echo "<option value=".$tipoLogradouroArray[$i][0].">".$tipoLogradouroArray[$i][1]."</option>";           
-       } 
+            if ($tipoLogradouroArray[$i][0] == $selected) {
+                echo "<option value=".$tipoLogradouroArray[$i][0]." selected>".$tipoLogradouroArray[$i][1]."</option>";  
+            } else {
+                echo "<option value=".$tipoLogradouroArray[$i][0].">".$tipoLogradouroArray[$i][1]."</option>";    
+            }
+        } 
     }
     
-    function populateEstadoList() {        
+    function populateEstadoList($selected = "") {        
        $estadoArray = array(
            array("", "Selecione um estado"  ),
            array("AC", "AC"),
@@ -278,9 +282,13 @@ function executarQuery($sql){
            array("TO", "TO")                   
            );
         
-       for ($i = 0; $i < count($estadoArray); $i++) {
-           echo "<option value=".$estadoArray[$i][0].">".$estadoArray[$i][1]."</option>";           
-       } 
+        for ($i = 0; $i < count($estadoArray); $i++) {
+            if ($estadoArray[$i][0] == $selected) {
+                echo "<option value=".$estadoArray[$i][0]." selected>".$estadoArray[$i][1]."</option>";                
+            } else {
+                echo "<option value=".$estadoArray[$i][0].">".$estadoArray[$i][1]."</option>";   
+            }
+        } 
     }
     
     function populateMotivoProdutoInutilizado() {
@@ -296,7 +304,7 @@ function executarQuery($sql){
         } 
     }
     
-    function populateOptionSelect($class, $keyword, $object_array) { 
+    function populateOptionSelect($class, $keyword, $object_array, $extra_data = "") { 
         $abreviated = substr($class, 0, 3);
         $label = ucfirst($class);
         
@@ -305,7 +313,7 @@ function executarQuery($sql){
         $content.= '<select class="chosen-select select_'.$class.'_'.$keyword.'" name="'.$abreviated.'_'.$keyword.'" >';
         $content.= '<option value="">Selecione '.$class.'</option>';            
         foreach ($object_array as $object){
-            $content.= '<option value="'.$object[$abreviated.'_id'].'">'.$object[$abreviated.'_name'].'</option>';  
+            $content.= '<option value="'.$object[$abreviated.'_id'].'" data-'.$extra_data.'="'.$object[$abreviated.'_'.$extra_data].'">'.$object[$abreviated.'_name'].'</option>'; 
         }    
         $content.= '</select>';
         echo $content;   

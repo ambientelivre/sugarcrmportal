@@ -1,53 +1,31 @@
 <?php
 include_once '../model/conexao.class.php';
-/*
-        $con=mysqli_connect("localhost","ambientelivre","sugarsql123","portal_homologacao");
-        
-        // Check connection
-        if (mysqli_connect_errno()) {
-          echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        }
-            */
+
         //Resgata as Regionais do Banco
         $sql = "SELECT * FROM ant_regionais WHERE id = " . $_REQUEST['ct_reg'] . " LIMIT 0 , 30";
-
         $result = mysql_query($sql);   
 
-        $regionais = array();
-        $reg1 = array();
-
         $i = 0;
-
         while($l = mysql_fetch_array($result)){
             $reg1['reg_id'] = $l['id'];
             $reg1['reg_razao'] = $l['reg_razao_social'];
             $reg1['reg_nm_fantasia'] = $l['reg_nm_fantasia'];
-
             $regionais[$i] = $reg1;
-
             $i++;
-
         }
         
         //Resgata as Secretarias do Banco
         $sql = "SELECT * FROM ant_secretarias WHERE id = " . $_REQUEST['ct_sec'] . " LIMIT 0 , 30";
-
         $result = mysql_query($sql);   
 
-        $sec = array();
-        $sec1 = array();
-
         $i = 0;
-
         while($l = mysql_fetch_array($result)){
             $sec1['sec_id'] = $l['id'];
             $sec1['sec_razao'] = $l['sec_razao_social'];
             $sec1['sec_nm_fantasia'] = $l['sec_nome_fantasia'];
 
             $sec[$i] = $sec1;
-
             $i++;
-
         }
 ?>
 
@@ -59,57 +37,11 @@ include_once '../model/conexao.class.php';
         <!-- Reveal Modal Plugin só funciona com jquery 1.6... -->
         <script type="text/javascript" src="<?php echo LIB_PATH; ?>/js/jquery_legacy_1.6.min.js"></script>
         <script src="<?php echo LIB_PATH; ?>/reveal/jquery.reveal.js"></script>
-        <script src="<?php echo LIB_PATH; ?>/js/ajax.js"></script>
-
-        <style>
-            
-            .h_div{
-                float: left;
-                background: #f1f1f1;
-                border-bottom: 2px solid #cdcdcd;
-                overflow: hidden;
-                width: 930px;
-                padding: 15px 5px;
-                margin: 0 0 10px 0;
-                
-            }
-            
-            .h_div p{
-                float: left;
-                margin: 0;
-            }
-            
-            .h_div ul{
-                float: left;
-                margin: 0;
-                padding: 0px;
-            }
-            
-            .h_div ul li{
-                float: left;
-                margin: 0 10px 0 0;
-                list-style: none;
-                
-            }
-            
-        </style>
-        
-        <script>
-            alert('oi')
-            $(function() {
-                
-                $('.bt_submit').click(function(){
-                    $('#con_form').submit();
-                });
-            }
-        </script>
-        
-    </head>
-    
+        <script src="<?php echo LIB_PATH; ?>/js/tecpar.min.js"></script>
+    </head>    
     <body>
         <div id="container">
-            <div id="content">
-                
+            <div id="content">                
                 <form id="con_form" method="POST" action="<?php echo PROJECT_URL; ?>ws_joomla/ctrl/ctrl_contatos.php">
                     
                     <?php if($key != 'AC' && $key != 'EX'){ ?>
@@ -183,12 +115,12 @@ include_once '../model/conexao.class.php';
                                         
 <!--                                               
                                             <a href="http://sugar.tecpar.br/portaldocliente/index.php/manutencao-de-contatos" style="text-decoration: none;">
-                                                <div id="bt_default" class="con_alterar">
+                                                <div class="bt_default con_alterar">
                                                     <p>Nova pesquisa</p>
                                                 </div>
                                             </a>-->
                                         
-                                            <div id="bt_default" class="con_alterar bt_submit">
+                                            <div class="bt_default con_alterar bt_submit">
                                                 <p>Alterar</p>
                                             </div>
 
@@ -206,7 +138,7 @@ include_once '../model/conexao.class.php';
                                             <td ><input type="hidden" value="AL" class="" name="key" style="float: left;"></td>    
                                                 
                                             <?php }else if($key == 'EX'){ ?>
-                                                <div id="bt_default" class="con_alterar bt_submit">
+                                                <div class="bt_default con_alterar bt_submit">
                                                     <p>Excluir</p>
                                                 </div>
                                                 <?php if($_REQUEST['sec_id'] != ''){ ?>
@@ -224,7 +156,7 @@ include_once '../model/conexao.class.php';
                                 
                                             <?php }else{ ?>
                                                 
-                                                <div id="bt_default" class="con_cadastrar">
+                                                <div class="bt_default con_cadastrar">
                                                     <p>Cadastrar</p>
                                                 </div>
 
