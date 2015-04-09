@@ -127,7 +127,7 @@ function executarQuery($sql){
     }
     
     function converte_data($data){        
-        // CONVERTER UMA DATA EM FORMATO BRASILEIRO PARA INSERIR NO MYSQL
+        // CONVERTER UMA DATA DE FORMATO BRASILEIRO PARA INSERIR NO MYSQL
         $data = implode("-",array_reverse(explode("/",$data)));
         return $data;
     }

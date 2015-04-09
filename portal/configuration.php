@@ -12,7 +12,7 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'mysql20.ambientelivre.com.br';
+	public $host = '186.202.13.17';
 	public $user = 'ambientelivre25';
 	public $password = 'sejalivre';
 	public $db = 'ambientelivre25';

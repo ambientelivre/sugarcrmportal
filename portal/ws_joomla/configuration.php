@@ -1,15 +1,14 @@
 <?php
 /*
-ARQUIVO DE CONFIGUTAÇÃO DO SISTEMA
+ARQUIVO DE CONFIGURAÇÃO DO SISTEMA
 ALTERE AS VARIÁVEIS DE ACORDO COM A SUA NESCESSIDADE.
 RENOMEIE ESTE ARQUIVO PARA: configuration.php
 */
 
 // ADICIONE AQUI A URL DO SISTEMA ERP
 $SERVER_URL = "http://localhost/tecpar/sugarcrmportal/portal/";
-// Localhost: http://localhost/tecpar/sugarcrmportal/portal/'
-// Online: http://sugar.tecpar.br/portaldocliente/
-// Por algum motivo JURI::base() não funciona nesse caso...
+//$SERVER_URL = "http://sugar.tecpar.br/portaldocliente/";
+//$SERVER_URL = "http://localhost/portaldocliente/";
 
 $CONFIG_URL = "";
 $NOME_PROJETO = 'ws_joomla';
@@ -50,7 +49,7 @@ define("IDCONV", "0951538");
 define("URL_RETORNO", "http://teste.com.br");
 define("URL_INFORMA", "http://teste.com.br");
 define("MSG_LOJA", "Simulação teste boleto");
-define("DATAVENCIMENTO", "7");
+define("DIASPARAPAGAR", "7");
 define("TPPAGAMENTO", "2");
 
 
